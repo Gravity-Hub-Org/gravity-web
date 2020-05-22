@@ -3,7 +3,7 @@ module.exports = {
    ** Headers of the page
    */
   head: {
-    title: 'gravity-hub',
+    title: 'Gravity Hub',
     meta: [{
         charset: 'utf-8'
       },
@@ -54,5 +54,6 @@ module.exports = {
         })
       }
     }
-  }
+  },
+  srcDir: 'src/',
 }

@@ -5,35 +5,37 @@
             span.logo
             div.footer-info-bottom
                 img.image(src='img/gravity-footer-text.svg', alt='waves')
-                a(href='mailto:info@gravityhub.org').link info@gravityhub.org
+                a(:href='`mailto:${contactInfo.email}`').link {{ contactInfo.email }}
                 span.copyrights © 2020 Gravity Hub. Made with <span class="icon-like">❤︎</span> in Saint Petersburg
         div.footer-menu
             div.footer-menu-block
-                span.footer-menu-block-title Product
-                a(href='/').footer-menu-block-link Get started
-                a(href='/').footer-menu-block-link Swap
+                span.footer-menu-block-title {{ sections.protocol.label }}
+                a(v-for="link in sections.protocol.links", :href="link.link", :target="link.target").footer-menu-block-link {{ link.label }}
             div.footer-menu-block
-                span.footer-menu-block-title Company
-                a(href='/').footer-menu-block-link About
-                a(href='/').footer-menu-block-link FAQ
-                a(href='https://blog.wavesplatform.com/gravity-hub').footer-menu-block-link Blog
-                a(href='/').footer-menu-block-link Contact us
+                span.footer-menu-block-title {{ sections.community.label }}
+                a(v-for="link in sections.community.links", :href="link.link", :target="link.target").footer-menu-block-link {{ link.label }}
             div.footer-menu-block
-                span.footer-menu-block-title Community
-                a(href='https://twitter.com/gravity_hub').footer-menu-block-link Twitter
-                a(href='https://www.linkedin.com/company/gravity-hub/?viewAsMember=true').footer-menu-block-link LinkedIn
-                a(href='https://www.facebook.com/GravityHubOrg').footer-menu-block-link Facebook
-                a(href='https://medium.com/@gravity_hub').footer-menu-block-link Medium
-                a(href='https://t.me/gravityhuborg').footer-menu-block-link Telegram
-                a(href='https://www.reddit.com/user/GravityHubOrg').footer-menu-block-link Reddit
+                span.footer-menu-block-title {{ sections.news.label }}
+                a(v-for="link in sections.news.links", :href="link.link", :target="link.target").footer-menu-block-link {{ link.label }}
             div.footer-menu-block
-                span.footer-menu-block-title Resourses
-                a(href='/').footer-menu-block-link Whitepaper
-                a(href='/').footer-menu-block-link GitHub
-                a(href='/').footer-menu-block-link Security audit
-                a(href='/').footer-menu-block-link Privacy policy
-                a(href='/').footer-menu-block-link Terms of Use
+                span.footer-menu-block-title {{ sections.resources.label }}
+                a(v-for="link in sections.resources.links", :href="link.link", :target="link.target").footer-menu-block-link {{ link.label }}
 </template>
+
+<script>
+import Menu from './Menu.vue';
+import { sections, contactInfo } from '../../global/links'
+
+export default {
+  props: ['openMenu'],
+  data: function() {
+    return {
+      contactInfo,
+      sections,
+    };
+  },
+};
+</script>
 
 <style lang="scss" scoped>
 @import "../../assets/scss/mixins/media";

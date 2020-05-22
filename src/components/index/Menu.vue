@@ -4,48 +4,40 @@
       div.content
         div.header-menu
             div.header-menu-block
-                span.header-menu-block-title Product
-                a(href='/').header-menu-block-link Get started
-                a(href='/').header-menu-block-link Swap
+                span.header-menu-block-title {{ sections.protocol.label }}
+                a(v-for="link in sections.protocol.links", :href="link.link", :target="link.target").header-menu-block-link {{ link.label }}
             div.header-menu-block
-                span.header-menu-block-title Company
-                a(href='/').header-menu-block-link About
-                a(href='/').header-menu-block-link FAQ
-                a(href='https://blog.wavesplatform.com/gravity-hub').header-menu-block-link Blog
-                a(href='/').header-menu-block-link Contact us
+                span.header-menu-block-title {{ sections.community.label }}
+                a(v-for="link in sections.community.links", :href="link.link", :target="link.target").header-menu-block-link {{ link.label }}
             div.header-menu-block
-                span.header-menu-block-title Community
-                a(href='https://twitter.com/gravity_hub').header-menu-block-link Twitter
-                a(href='https://www.linkedin.com/company/gravity-hub/?viewAsMember=true').header-menu-block-link LinkedIn
-                a(href='https://www.facebook.com/GravityHubOrg').header-menu-block-link Facebook
-                a(href='https://medium.com/@gravity_hub').header-menu-block-link Medium
-                a(href='https://t.me/gravityhuborg').header-menu-block-link Telegram
-                a(href='https://www.reddit.com/user/GravityHubOrg').header-menu-block-link Reddit
+                span.header-menu-block-title {{ sections.news.label }}
+                a(v-for="link in sections.news.links", :href="link.link", :target="link.target").header-menu-block-link {{ link.label }}
             div.header-menu-block
-                span.header-menu-block-title Resourses
-                a(href='/').header-menu-block-link Whitepaper
-                a(href='/').header-menu-block-link GitHub
-                a(href='/').header-menu-block-link Security audit
-                a(href='/').header-menu-block-link Privacy policy
-                a(href='/').header-menu-block-link Terms of Use
+                span.header-menu-block-title {{ sections.resources.label }}
+                a(v-for="link in sections.resources.links", :href="link.link", :target="link.target").header-menu-block-link {{ link.label }}
         div.header-info
             div.header-info-bottom
                 img.image(src='img/gravity-footer-text.svg', alt='waves')
-                a(href='mailto:info@gravityhub.org').link info@gravityhub.org
-
+                a(:href='`mailto:${contactInfo.email}`').link {{ contactInfo.email }}
 </template>
 
-
 <script>
-import Menu from "./Menu.vue";
+import Menu from './Menu.vue';
+import { sections, contactInfo } from '../../global/links'
 
 export default {
-  props: ["openMenu"]
+  props: ['openMenu'],
+  data: function() {
+    return {
+      contactInfo,
+      sections,
+    };
+  },
 };
 </script>
 
 <style lang="scss" scoped>
-@import "../../assets/scss/mixins/media";
+@import '../../assets/scss/mixins/media';
 
 .header-menu-section {
   z-index: 99;
@@ -67,7 +59,7 @@ export default {
     padding: 80px 100px;
 
     &:before {
-      content: "";
+      content: '';
       position: absolute;
       top: 0;
       right: 0;
