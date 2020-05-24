@@ -1,14 +1,14 @@
 <template lang="pug">
-  header(v-bind:class="{ 'header-fixed' : fixHeader }")
+  header(v-bind:class="{ 'header-fixed' : fixHeader }" :style="{ backgroundColor: headerColor }")
     div.container
       span.logo
       div.nav
         span.button.button-login(v-on:click="openLogin = !openLogin") Join us
-        div.language-select-block
-          div.language-select
-            span.language-selected(v-on:click="openedLngList = !openedLngList", v-bind:class="{ opened: openedLngList }") {{ currLanguage }}
-            div.language-select-list(v-if="openedLngList")
-              span.language-select-list-title(v-for="lng in languagesList", v-if="!lng['active']", v-on:click="setLanguage(lng)") {{ lng['title'] }}
+        //- div.language-select-block
+        //-   div.language-select
+        //-     span.language-selected(v-on:click="openedLngList = !openedLngList", v-bind:class="{ opened: openedLngList }") {{ currLanguage }}
+        //-     div.language-select-list(v-if="openedLngList")
+        //-       span.language-select-list-title(v-for="lng in languagesList", v-if="!lng['active']", v-on:click="setLanguage(lng)") {{ lng['title'] }}
         div.menu-toggle(v-bind:class="{ 'opened-menu' : openingMenu }", v-on:click="openingMenu = !openingMenu")
           span.menu-toggle-line
           span.menu-toggle-line
@@ -17,90 +17,107 @@
 </template>
 
 <script>
-import Menu from "./Menu.vue";
-import LoginSection from "./LoginSection.vue";
+import Menu from './Menu.vue';
+import LoginSection from './LoginSection.vue';
 
 export default {
   data: function() {
     return {
+      headerBGOpacity: 0,
       openLogin: false,
       fixHeader: false,
-      currLanguage: "Eng",
+      currLanguage: 'Eng',
       openedLngList: false,
       openingMenu: false,
       languagesList: [
         {
-          lng: "en",
-          title: "Eng",
-          active: true
+          lng: 'en',
+          title: 'Eng',
+          active: true,
         },
         {
-          lng: "it",
-          title: "Ita",
-          active: false
+          lng: 'it',
+          title: 'Ita',
+          active: false,
         },
         {
-          lng: "vie",
-          title: "Vie",
-          active: false
+          lng: 'vie',
+          title: 'Vie',
+          active: false,
         },
         {
-          lng: "deu",
-          title: "Deu",
-          active: false
-        }
-      ]
+          lng: 'deu',
+          title: 'Deu',
+          active: false,
+        },
+      ],
     };
   },
   components: {
     Menu,
-    LoginSection
+    LoginSection,
   },
   mounted() {
-    window.addEventListener("scroll", event => {
-      window.scrollY > 55 ? (this.fixHeader = true) : (this.fixHeader = false);
+    window.addEventListener('scroll', event => {
+      // window.scrollY > 55 ? (this.fixHeader = true) : (this.fixHeader = false);
+      this.fixHeader = window.scrollY > 25;
+
+      if (window.scrollY < 25) {
+        this.headerBGOpacity = 0;
+        return;
+      }
+      if (window.scrollY > 100) {
+        this.headerBGOpacity = 1;
+        return;
+      }
+      this.headerBGOpacity = window.scrollY / 100;
     });
 
-    this.$root.$on("modalLogin", function(state) {
+    this.$root.$on('modalLogin', function(state) {
       this.openLogin = false;
-      console.log("open login 1", this.openLogin);
+      console.log('open login 1', this.openLogin);
       this.openLogin = true;
-      console.log("open login 2", this.openLogin);
+      console.log('open login 2', this.openLogin);
     });
   },
   head() {
     return {
       bodyAttrs: {
-        class: this.openLogin ? "modal-open" : ""
-      }
+        class: this.openLogin ? 'modal-open' : '',
+      },
     };
+  },
+  computed: {
+    headerColor: function() {
+      return `rgba(24, 26, 41, ${this.headerBGOpacity}`;
+    },
   },
   methods: {
     setLanguage: function(event) {
-      this.currLanguage = event["title"];
+      this.currLanguage = event['title'];
       this.openedLngList = false;
 
       this.languagesList.map(lang => {
-        if (lang["lng"] === event["lng"]) {
-          lang["active"] = true;
+        if (lang['lng'] === event['lng']) {
+          lang['active'] = true;
         } else {
-          lang["active"] = false;
+          lang['active'] = false;
         }
       });
       this.languagesList.sort((a, b) => {
         return b.active ? 1 : -1;
       });
-    }
+    },
     // loginModal: function(state) {
     //   // this.$root.$emit("modalOpen", state);
     //   this.openLogin = state;
     // }
-  }
+  },
 };
 </script>
 
 <style lang="scss" scoped>
-@import "../../assets/scss/mixins/media.scss";
+@import '../../assets/scss/mixins/media.scss';
 
 header {
   position: absolute;
@@ -110,6 +127,8 @@ header {
   padding: 30px 10px;
   z-index: 3;
 
+  transition: background-color 0.3s linear;
+
   @include bb(endmobile, 0) {
     padding: 10px 0;
   }
@@ -117,7 +136,7 @@ header {
   &.header-fixed {
     position: fixed;
     padding: 0;
-    background-color: #181a29;
+    // background-color: #181a29;
   }
 
   .container {
@@ -200,7 +219,7 @@ header {
   }
 
   &:after {
-    content: "";
+    content: '';
     display: block;
     width: 8px;
     height: 8px;
@@ -240,7 +259,7 @@ header {
   left: -15px;
 
   &:before {
-    content: "";
+    content: '';
     position: absolute;
     top: 0;
     right: 0;

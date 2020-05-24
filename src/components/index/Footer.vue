@@ -4,7 +4,7 @@
         div.footer-info
             span.logo
             div.footer-info-bottom
-                img.image(src='img/gravity-footer-text.svg', alt='waves')
+                //- img.image(src='img/gravity-footer-text.svg', alt='waves')
                 a(:href='`mailto:${contactInfo.email}`').link {{ contactInfo.email }}
                 span.copyrights © 2020 Gravity Hub. Made with <span class="icon-like">❤︎</span> in Saint Petersburg
         div.footer-menu

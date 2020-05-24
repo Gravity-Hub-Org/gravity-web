@@ -376,6 +376,7 @@ b {
   background-size: contain;
   width: 133px;
   height: 60px;
+  filter: invert(1);
 
   @include b(550) {
     width: 120px;

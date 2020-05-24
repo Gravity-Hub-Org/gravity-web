@@ -223,7 +223,7 @@ section.header {
           }
 
           @include after-img(block, 15px, 190px, a) {
-            background-image: url("~static/img/gravity-header-text.svg");
+            // background-image: url("~static/img/gravity-header-text.svg");
             background-size: cover;
             background-repeat: no-repeat;
             top: 31%;

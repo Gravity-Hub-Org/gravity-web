@@ -80,7 +80,7 @@ export const sections = {
       },
       {
         label: 'Brand Assets',
-        link: '#',
+        link: 'https://drive.google.com/drive/folders/1D_RtcZ9-EkiUmM2uD7a2OTY430TqD-ue',
         target: '_blank',
       },
     ],
