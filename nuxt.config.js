@@ -59,6 +59,7 @@ module.exports = {
   buildModules: ['@aceforth/nuxt-optimized-images'],
 
   optimizedImages: {
+    optimizeImagesInDev: true,
     optimizeImages: true,
   },
 };

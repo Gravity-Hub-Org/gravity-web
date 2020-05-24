@@ -2,7 +2,7 @@
   section.block.block-watching
     div.container-content
       div.block-image
-        img.block-image-wrap(src='img/watching.svg', alt='watching data')
+        img.block-image-wrap(src='img/watching.png', alt='watching data')
         div.block-image-text
           div.block-image-text-wrap
             p.text In order to monetize your infrastructure on the Gravity Hub network, simply lock a deposit in any of the supported native tokens and run a GH node on your server.

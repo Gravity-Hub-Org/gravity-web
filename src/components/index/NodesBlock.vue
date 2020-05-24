@@ -10,7 +10,7 @@
           p.text Gravity Hub provides straightforward interoperability at the levels of protocols and decentralized software, allowing dApps to easily exchange data across different blockchains.
           p.text Gravity Hub is an open source software with transparent mechanisms for introducing changes and improvements. Join the open source developers team and contribute to the success of web3.0!
       div.block-image
-        img.block-image-wrap(src='img/nodes.svg',alt='nodes')
+        img.block-image-wrap(src='img/nodes.png',alt='nodes')
 </template>
 
 
