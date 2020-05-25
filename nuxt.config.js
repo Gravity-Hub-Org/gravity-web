@@ -65,10 +65,5 @@ module.exports = {
     optimizeImages: true,
   },
 
-  sitemap: {
-    hostname: 'https://gravityhub.org',
-    gzip: false,
-    // exclude: ['/secret', '/admin/**'],
-    routes: flattenSections(sections),
-  },
+  sitemap: false,
 };
