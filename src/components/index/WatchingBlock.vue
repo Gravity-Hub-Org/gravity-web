@@ -5,11 +5,11 @@
         img.block-image-wrap(src='img/watching.png', alt='watching data')
         div.block-image-text
           div.block-image-text-wrap
-            p.text In order to monetize your infrastructure on the Gravity Hub network, simply lock a deposit in any of the supported native tokens and run a GH node on your server.
+            p.text Gravity is easy to set up: in order to start monetising your infrastructure via the Gravity network, you can simply pay a deposit in any of the supported native tokens and run a Gravity node on your server.
       div.block-text
-        h2.text.text-title Monetization opportunities
-        p.text GH offers new monetization mechanics to node maintainers, alternatives to mining. Providers of GH services can monetize their data processing capabilities and get paid in the native tokens of platforms supported by GH.
-        p.text Consumers of data or event triggers from the nodes of Gravity Hub can pay for services by maintaining a stable balance on payment accounts of providers.
+        h2.text.text-title Monetisation opportunities
+        p.text Gravity offers new monetisation mechanics to node maintainers, as a flexible alternative to mining. Providers of Gravity services can monetise their data processing capabilities and get paid in the native tokens of platforms supported by Gravity.
+        p.text Consumers of data or event triggers from Gravity nodes can pay for services by maintaining a stable balance on the payment accounts of providers.
 </template>
 
 <style lang="scss" scoped>

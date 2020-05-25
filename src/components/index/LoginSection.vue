@@ -11,8 +11,8 @@
         span.login-block-join-text Gravity Hub is coming soon!
         span.login-block-join-text Join to talk with the team and follow the updates
         div.login-block-join
-          a(href="https://t.me/gravityhuborg").button.button-telegram-2 Telegram
-          a(href="https://discord.gg/RbfvnW").button.button-discord Discord
+          a(href="https://t.me/gravityhuborg", target="_blank").button.button-telegram-2 Telegram
+          a(href="https://discord.gg/RbfvnW", target="_blank").button.button-discord Discord
         hr
         //- div.login-block-buttons
         //-   span.button.button-waves-signer Waves Signer
@@ -139,7 +139,7 @@ export default {
   background-color: #0f1017f5;
 
   .container {
-    max-width: 1150px;
+    max-width: 1210px;
     background-color: #2d3044;
     padding: 50px 100px;
     position: relative;

@@ -3,8 +3,8 @@
     div.container-content
       div.block-gravity-hub
         h2.text.text-title Join Gravity Hub
-        p.text Become a part of Gravity Hub community of developers and service providers!
-        span.button.button-orange(v-on:click="loginModal(true)") Join us
+        p.text Gravity is an open source software with transparent mechanisms for introducing changes and improvements. Join the community of open source developers and service providers to contribute to the success of web3.0!
+        span.button.button-orange(v-on:click="openModal()") Join us
         div.img-block
           img(src='img/cos.svg', alt='cosmonaut')
           img(src='img/cos-mob.png', alt='cosmonaut')
@@ -19,7 +19,7 @@ export default {
   //   });
   // },
   methods: {
-    loginModal: function(state) {
+    openModal: function(state) {
       this.$root.$emit("modalLogin", true);
     }
   }
@@ -93,6 +93,7 @@ section.section-gravity-hub {
         line-height: 28px;
         opacity: 0.74;
         padding: 0 35px;
+        text-align: center;
 
         @include b(tablet) {
           margin-bottom: 15px;

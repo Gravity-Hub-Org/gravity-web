@@ -17,7 +17,7 @@
                 a(v-for="link in sections.resources.links", :href="link.link", :target="link.target").header-menu-block-link {{ link.label }}
         div.header-info
             div.header-info-bottom
-                img.image(src='img/gravity-footer-text.svg', alt='waves')
+                //- img.image(src='img/gravity-footer-text.svg', alt='waves')
                 a(:href='`mailto:${contactInfo.email}`').link {{ contactInfo.email }}
 </template>
 
@@ -53,7 +53,7 @@ export default {
   }
 
   .container {
-    max-width: 1150px;
+    max-width: 1210px;
     background-color: rgba(18, 18, 25, 0.98);
     position: relative;
     padding: 80px 100px;

@@ -73,11 +73,9 @@ export default {
       this.headerBGOpacity = window.scrollY / 100;
     });
 
+    const self = this;
     this.$root.$on('modalLogin', function(state) {
-      this.openLogin = false;
-      console.log('open login 1', this.openLogin);
-      this.openLogin = true;
-      console.log('open login 2', this.openLogin);
+      self.openLogin = state;
     });
   },
   head() {

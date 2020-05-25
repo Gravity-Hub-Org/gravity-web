@@ -6,7 +6,7 @@
             div.footer-info-bottom
                 //- img.image(src='img/gravity-footer-text.svg', alt='waves')
                 a(:href='`mailto:${contactInfo.email}`').link {{ contactInfo.email }}
-                span.copyrights © 2020 Gravity Hub. Made with <span class="icon-like">❤︎</span> in Saint Petersburg
+                span.copyrights © 2020 Gravity Hub Org
         div.footer-menu
             div.footer-menu-block
                 span.footer-menu-block-title {{ sections.protocol.label }}
@@ -42,7 +42,7 @@ export default {
 
 footer {
   z-index: 1;
-  margin-top: -100px;
+  margin-top: -280px;
   position: relative;
 
   @include b(tablet) {

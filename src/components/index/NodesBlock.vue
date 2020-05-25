@@ -5,10 +5,9 @@
         div.block-text-wrap
           h2.text.text-title Blockchain agnostic
           p.text
-            b Gravity Hub’s nodes
-            |  is a middleware that establishes communication between blockchains amongst themselves and connects them to external world. GH has no native token, which makes it truly agnostic and reduces the complexity of the system.
-          p.text Gravity Hub provides straightforward interoperability at the levels of protocols and decentralized software, allowing dApps to easily exchange data across different blockchains.
-          p.text Gravity Hub is an open source software with transparent mechanisms for introducing changes and improvements. Join the open source developers team and contribute to the success of web3.0!
+            b Gravity Node
+            |  is a middleware that establishes communication between blockchains amongst themselves and connects them to the external world. As a truly blockchain-agnostic solution, Gravity requires no dedicated utility token, which greatly reduces the overall complexity.
+          p.text The Gravity network provides straightforward interoperability at the levels of protocols and decentralized software, allowing applications to easily exchange data across different blockchains.
       div.block-image
         img.block-image-wrap(src='img/nodes.png',alt='nodes')
 </template>

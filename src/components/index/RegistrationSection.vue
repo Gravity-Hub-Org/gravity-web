@@ -101,7 +101,7 @@ export default {
 }
 
 .container-registration {
-  max-width: 1150px;
+  max-width: 1210px;
   background-color: #2d3044;
   padding: 80px 100px;
   position: relative;
