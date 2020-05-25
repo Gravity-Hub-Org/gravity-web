@@ -20,7 +20,6 @@ export const flattenSections = sections => {
     result.push(...links.map(mapLinkToSitemapItem));
   }
 
-  console.log({ result })
   return result;
 };
 export const sections = {

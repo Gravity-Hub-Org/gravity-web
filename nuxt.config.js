@@ -66,7 +66,7 @@ module.exports = {
   },
 
   sitemap: {
-    // hostname: 'https://gravityhub.org',
+    hostname: 'https://gravityhub.org',
     gzip: false,
     // exclude: ['/secret', '/admin/**'],
     routes: flattenSections(sections),
