@@ -1,9 +1,28 @@
-
-
 export const contactInfo = {
-  email: 'oracle@gravityhub.org'
-}
+  email: 'oracle@gravityhub.org',
+};
 
+const mapLinkToSitemapItem = link => ({
+  url: link.link,
+  priority: link.priority || 1,
+});
+export const flattenSections = sections => {
+  const result = [];
+
+  const sectionKeys = Object.keys(sections);
+
+  for (let i = 0; i < sectionKeys.length; i++) {
+    const key = sectionKeys[i]
+    let { links } = sections[key];
+
+    if (!links) continue;
+
+    result.push(...links.map(mapLinkToSitemapItem));
+  }
+
+  console.log({ result })
+  return result;
+};
 export const sections = {
   protocol: {
     label: 'Protocol',

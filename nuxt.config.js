@@ -1,3 +1,5 @@
+const { sections, flattenSections } = require('./src/global/links');
+
 module.exports = {
   /*
    ** Headers of the page
@@ -56,10 +58,17 @@ module.exports = {
     },
   },
   srcDir: 'src/',
-  buildModules: ['@aceforth/nuxt-optimized-images'],
+  modules: ['@aceforth/nuxt-optimized-images', '@nuxtjs/sitemap'],
 
   optimizedImages: {
     optimizeImagesInDev: true,
     optimizeImages: true,
+  },
+
+  sitemap: {
+    // hostname: 'https://gravityhub.org',
+    gzip: false,
+    // exclude: ['/secret', '/admin/**'],
+    routes: flattenSections(sections),
   },
 };
