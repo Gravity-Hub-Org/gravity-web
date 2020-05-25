@@ -13,11 +13,12 @@ RUN apk update && apk upgrade && apk add --no-cache bash git openssh \
     && npm run generate
 
 FROM nginx:stable-alpine as nginx
-COPY --from=gravity /gh/dist /var/www/html
+COPY --from=gravity /gh/dist /usr/share/nginx/html
 RUN mkdir -p /etc/nginx/sites-enabled
+
 # COPY ./nginx.conf /etc/nginx/
 # COPY ./default.conf /etc/nginx/sites-enabled/default.conf
-RUN ls -la /var/www/html
-RUN chmod -R 0777 /var/www/html
+RUN ls -la /usr/share/nginx/html
+RUN chmod -R 0777 /usr/share/nginx/html
 EXPOSE 80
 ENTRYPOINT ["nginx", "-g", "daemon off;"]
