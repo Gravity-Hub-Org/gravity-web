@@ -4,7 +4,7 @@
       span.close-section-item
       span.close-section-item
     div.registration-block
-      h3.registration-block-title Welcome to the Gravity Hub!
+      h3.registration-block-title Welcome to the Gravity!
       hr
       transition(name="fade")
         registration-steps(v-bind:step="step")

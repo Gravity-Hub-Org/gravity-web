@@ -5,7 +5,7 @@ module.exports = {
    ** Headers of the page
    */
   head: {
-    title: 'Gravity Hub',
+    title: 'Gravity Protocol',
     meta: [
       {
         charset: 'utf-8',

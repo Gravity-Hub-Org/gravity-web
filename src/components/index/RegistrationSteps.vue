@@ -28,7 +28,7 @@
       div.registration-step-two
         div.registration-step-info
           span.registration-step-title Chek Waves Keeper permissions
-          span.registration-step-text If you haven't yet given Waves Keeper access to Gravity Hub, you will need to do the following steps: Open Waves Keeper. Go to the Settings menu (in the right upper corner). <br><br>Open Permissions Control menu Give access to gravityhub.org by clicking a power button icon on the left
+          span.registration-step-text If you haven't yet given Waves Keeper access to Gravity, you will need to do the following steps: Open Waves Keeper. Go to the Settings menu (in the right upper corner). <br><br>Open Permissions Control menu Give access to gravityhub.org by clicking a power button icon on the left
           div.registration-step-buttons
             span.button.button-watch Watch video instructions
             span.button.button-telegram Ask for help in Telegram group

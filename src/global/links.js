@@ -1,5 +1,5 @@
 export const contactInfo = {
-  email: 'oracle@gravityhub.org',
+  email: 'oracle@gravity.tech',
 };
 
 const mapLinkToSitemapItem = link => ({

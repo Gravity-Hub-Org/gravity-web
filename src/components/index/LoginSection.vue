@@ -8,7 +8,7 @@
         //- span.login-block-title Connect to get started
         span.login-block-title Our communities
         hr
-        span.login-block-join-text Gravity Hub is coming soon!
+        span.login-block-join-text Gravity is coming soon!
         span.login-block-join-text Join to talk with the team and follow the updates
         div.login-block-join
           a(href="https://t.me/gravityhuborg", target="_blank").button.button-telegram-2 Telegram
