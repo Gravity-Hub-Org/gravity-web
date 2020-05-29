@@ -12,7 +12,7 @@ export const flattenSections = sections => {
   const sectionKeys = Object.keys(sections);
 
   for (let i = 0; i < sectionKeys.length; i++) {
-    const key = sectionKeys[i]
+    const key = sectionKeys[i];
     let { links } = sections[key];
 
     if (!links) continue;
@@ -22,6 +22,60 @@ export const flattenSections = sections => {
 
   return result;
 };
+
+export const metaTags = [
+  {
+    charset: 'utf-8',
+  },
+  {
+    hid: 'description',
+    name: 'description',
+    content: `Blockchain Agnostic Oracles and Interchain Communication Network.`,
+  },
+  {
+    name: 'keywords',
+    content:
+      'blockchain, crosschain, interchain, oracles, datafeeds, waves, ethereum, bitcoin, gateways, consensus, smartcontract, ride, solidity',
+  },
+  {
+    content: 'Gravity',
+    property: 'og:title',
+  },
+  {
+    content: 'https://gravity.tech',
+    property: 'og:url',
+  },
+  {
+    content: 'Gravity',
+    property: 'og:site_name',
+  },
+  {
+    content: 'Gravity',
+    property: 'twitter:site',
+  },
+  {
+    content: 'index.html',
+    property: 'og:url',
+  },
+  {
+    content: 'all',
+    property: 'robots',
+  },
+  {
+    content: 'website',
+    property: 'og:type',
+  },
+  {
+    name: 'viewport',
+    content: 'width=device-width, initial-scale=1',
+  },
+  {
+    hid: 'description',
+    name: 'description',
+    content: `Gravity | Blockchain Agnostic Oracles and Interchain Communication Network.`,
+  },
+];
+
 export const sections = {
   protocol: {
     label: 'Protocol',

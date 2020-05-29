@@ -1,4 +1,4 @@
-const { sections, flattenSections } = require('./src/global/links');
+const { sections, metaTags, flattenSections } = require('./src/global/links');
 
 module.exports = {
   /*
@@ -6,40 +6,7 @@ module.exports = {
    */
   head: {
     title: 'Gravity Protocol',
-    meta: [
-      {
-        charset: 'utf-8',
-      },
-      {
-        name: 'description',
-        content: `Blockchain Agnostic Oracles and Interchain Communication Network.`
-      },
-      {
-        name: 'keywords',
-        content: 'blockchain, crosschain, interchain, oracles, datafeeds, waves, ethereum, bitcoin, gateways, consensus, smartcontract, ride, solidity'
-      },
-      {
-        content: 'Gravity',
-        property: 'og:title'
-      },
-      {
-        content: 'index.html',
-        property: 'og:url'
-      },
-      {
-        content: 'website',
-        property: 'og:type'
-      },
-      {
-        name: 'viewport',
-        content: 'width=device-width, initial-scale=1',
-      },
-      {
-        hid: 'description',
-        name: 'description',
-        content: 'gravity-hub site',
-      },
-    ],
+    meta: metaTags,
     link: [
       {
         rel: 'icon',
