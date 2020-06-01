@@ -147,12 +147,12 @@ export const sections = {
       },
       {
         label: 'FAQ',
-        link: 'https://faq.gravityhub.org',
+        link: 'https://medium.com/@gravity_protocol',
         target: '_blank',
       },
       {
         label: 'GitHub',
-        link: 'https://github.com/Gravity-Hub-Org',
+        link: 'https://github.com/Gravity-Tech',
         target: '_blank',
       },
       {

@@ -1,5 +1,5 @@
 <template>
-  <div></div>
+  <img src='/static/docs/whitepaper.pdf' v-show="false"/>
 </template>
 
 <script>
