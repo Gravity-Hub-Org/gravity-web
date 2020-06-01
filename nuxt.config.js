@@ -1,11 +1,11 @@
-const { sections, metaTags, flattenSections } = require('./src/global/links');
+const { sections, metaTags, flattenSections, mainTitle } = require('./src/global/links');
 
 module.exports = {
   /*
    ** Headers of the page
    */
   head: {
-    title: 'Gravity Protocol',
+    title: mainTitle,
     meta: metaTags,
     link: [
       {

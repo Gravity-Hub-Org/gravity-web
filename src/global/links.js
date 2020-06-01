@@ -23,8 +23,14 @@ export const flattenSections = sections => {
   return result;
 };
 
+export const mainTitle = 'Gravity Protocol'
+const previewImagePath = '/img/preview/opengraph_gravity@2x.png'
 
-const previewImagePath =  '/img/preview/opengraph_gravity.png'
+const shortDescription = 'Oracles and Interchain Communication Network'
+const longDescription = `
+An all-encompassing, blockchain-agnostic oracle system that supports communication of blockchains with the outside world, 
+cross-chain communication, and integration of sidechains, within a single unified structure
+`
 export const metaTags = [
   {
     charset: 'utf-8',
@@ -35,7 +41,7 @@ export const metaTags = [
       'blockchain, crosschain, interchain, oracles, datafeeds, waves, ethereum, bitcoin, gateways, consensus, smartcontract, ride, solidity',
   },
   {
-    content: 'Gravity',
+    content: 'Gravity Protocol',
     property: 'og:title',
   },
   {
@@ -43,16 +49,12 @@ export const metaTags = [
     property: 'og:url',
   },
   {
-    content: 'Gravity',
+    content: 'Gravity Protocol',
     property: 'og:site_name',
   },
   {
-    content: 'Gravity',
+    content: 'Gravity Protocol',
     property: 'twitter:site',
-  },
-  {
-    content: 'index.html',
-    property: 'og:url',
   },
   {
     name: 'og:image',
@@ -83,9 +85,20 @@ export const metaTags = [
     content: 'width=device-width, initial-scale=1',
   },
   {
-    hid: 'description',
+    name: 'apple-mobile-web-app-status-bar-style',
+    content: 'black',
+  },
+  {
+    name: 'apple-mobile-web-app-capable',
+    content: 'yes',
+  },
+  {
+    name: 'format-detection',
+    content: 'email=no',
+  },
+  {
     name: 'description',
-    content: `Gravity | Blockchain Agnostic Oracles and Interchain Communication Network.`,
+    content: longDescription,
   },
 ];
 
