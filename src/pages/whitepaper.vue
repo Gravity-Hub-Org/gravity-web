@@ -5,7 +5,8 @@
 <script>
 export default {
   fetch(params) {
-    window.location.href = `${window.location.origin}/docs/whitepaper.pdf`
+    const { redirect } = params;
+    redirect(301, `/docs/whitepaper.pdf`);
   },
 };
 </script>
