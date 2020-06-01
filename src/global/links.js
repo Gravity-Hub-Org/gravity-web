@@ -26,7 +26,7 @@ export const flattenSections = sections => {
 export const mainTitle = 'Gravity Protocol'
 const previewImagePath = '/img/preview/opengraph_gravity@2x.png'
 
-const shortDescription = 'Oracles and Interchain Communication Network'
+export const shortDescription = 'Oracles and Interchain Communication Network'
 const longDescription = `
 An all-encompassing, blockchain-agnostic oracle system that supports communication of blockchains with the outside world, 
 cross-chain communication, and integration of sidechains, within a single unified structure

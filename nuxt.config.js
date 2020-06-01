@@ -1,11 +1,11 @@
-const { sections, metaTags, flattenSections, mainTitle } = require('./src/global/links');
+const { sections, metaTags, flattenSections, shortDescription } = require('./src/global/links');
 
 module.exports = {
   /*
    ** Headers of the page
    */
   head: {
-    title: mainTitle,
+    title: shortDescription,
     meta: metaTags,
     link: [
       {
