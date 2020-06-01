@@ -271,11 +271,6 @@ export const sections = {
     label: 'Resources',
     links: [
       {
-        label: 'Privacy Policy',
-        link: 'https://docs.google.com/document/d/1m2usOhWP873r04cBROfQxddt5HpCEC5f6gppdySWjw4/edit?usp=sharing',
-        target: '_blank',
-      },
-      {
         label: 'Brand Assets',
         link: 'https://drive.google.com/drive/folders/1D_RtcZ9-EkiUmM2uD7a2OTY430TqD-ue',
         target: '_blank',
