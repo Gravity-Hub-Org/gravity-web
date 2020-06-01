@@ -120,17 +120,17 @@ export const sections = {
     links: [
       {
         label: 'Telegram',
-        link: 'https://t.me/gravityhuborg',
+        link: 'https://t.me/gravity_protocol',
         target: '_blank',
       },
       {
         label: 'Discord',
-        link: 'https://discord.gg/mSRAdB ',
+        link: 'https://discord.gg/ANZKhTw',
         target: '_blank',
       },
       {
         label: 'Reddit',
-        link: 'https://www.reddit.com/user/GravityHubOrg',
+        link: 'https://www.reddit.com/user/Gravity_protocol',
         target: '_blank',
       },
     ],
@@ -140,17 +140,17 @@ export const sections = {
     links: [
       {
         label: 'Blog',
-        link: 'https://medium.com/@gravity_hub',
+        link: 'https://medium.com/@gravity_protocol',
         target: '_blank',
       },
       {
         label: 'Twitter',
-        link: 'https://twitter.com/@gravity_hub ',
+        link: 'https://twitter.com/ProtocolGravity',
         target: '_blank',
       },
       {
         label: 'LinkedIn',
-        link: 'https://www.linkedin.com/company/gravity-hub',
+        link: 'www.linkedin.com/company/gravity-protocol',
         target: '_blank',
       },
     ],
