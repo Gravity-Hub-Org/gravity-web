@@ -30,7 +30,7 @@ export const getSitemap = () => {
     // gzip: true,
     routes: [
       {
-        url: '/whitepaper',
+        url: '/docs/whitepaper.pdf',
         priority: 1,
       },
       {
@@ -141,7 +141,7 @@ export const internalProtocolLinks = {
   links: [
     {
       label: 'Whitepaper',
-      link: '/whitepaper',
+      link: '/docs/whitepaper.pdf',
       target: '_blank',
     },
     {
