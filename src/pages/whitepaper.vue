@@ -1,12 +1,12 @@
 <template>
-  <img src='/static/docs/whitepaper.pdf' v-show="false"/>
+  <div></div>
 </template>
 
 <script>
 export default {
   fetch(params) {
     const { redirect } = params;
-    redirect(301, `/static/docs/whitepaper.pdf`);
+    redirect(301, `docs/whitepaper.pdf`);
   },
 };
 </script>
