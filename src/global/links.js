@@ -41,7 +41,7 @@ export const metaTags = [
       'blockchain, crosschain, interchain, oracles, datafeeds, waves, ethereum, bitcoin, gateways, consensus, smartcontract, ride, solidity',
   },
   {
-    content: 'Gravity Protocol',
+    content: shortDescription,
     property: 'og:title',
   },
   {
@@ -53,16 +53,16 @@ export const metaTags = [
     property: 'og:site_name',
   },
   {
+    name: 'og:image',
+    content: previewImagePath
+  },
+  {
     content: 'Gravity Protocol',
     property: 'twitter:site',
   },
   {
-    name: 'og:image',
-    content: previewImagePath
-  },
-  {
-    name: 'og:image',
-    content: previewImagePath
+    content: shortDescription,
+    property: 'twitter:title',
   },
   {
     name: 'twitter:image',
