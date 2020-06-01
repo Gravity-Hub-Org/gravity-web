@@ -3,7 +3,7 @@
 </template>
 
 <script>
-import { sections, getDocsLink } from '../../global/links'
+import { sections, getDocsLink } from '../global/links';
 
 export default {
   fetch (params) {
