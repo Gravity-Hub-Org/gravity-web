@@ -11,8 +11,8 @@
         span.login-block-join-text Gravity is coming soon!
         span.login-block-join-text Join to talk with the team and follow the updates
         div.login-block-join
-          a(href="https://t.me/gravityhuborg", target="_blank").button.button-telegram-2 Telegram
-          a(href="https://discord.gg/RbfvnW", target="_blank").button.button-discord Discord
+          a(:href="links.telegram.link", target="_blank").button.button-telegram-2 {{ links.telegram.label }}
+          a(:href="links.discord.link", target="_blank").button.button-discord {{ links.discord.label }}
         hr
         //- div.login-block-buttons
         //-   span.button.button-waves-signer Waves Signer
@@ -22,12 +22,17 @@
 
 <script>
 import RegistrationSection from "./RegistrationSection.vue";
+import { sections, getTelegramLink, getDiscordLink } from '../../global/links'
 
 export default {
   props: ["openLogin"],
   data: function() {
     return {
-      openRegistration: false
+      openRegistration: false,
+      links: {
+        telegram: getTelegramLink(sections),
+        discord: getDiscordLink(sections)
+      }
     };
   },
   components: {

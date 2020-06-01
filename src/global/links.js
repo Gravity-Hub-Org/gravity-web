@@ -23,6 +23,32 @@ export const flattenSections = sections => {
   return result;
 };
 
+export const getSitemap = () => {
+
+  return {
+    hostname: 'https://gravity.tech',
+    // gzip: true,
+    routes: [
+      {
+        url: '/whitepaper',
+        priority: 1,
+      },
+      {
+        url: '/docs',
+        priority: 1,
+      },
+      {
+        url: '/faq',
+        priority: 1,
+      },
+      {
+        url: '/blog',
+        priority: 1,
+      }
+    ]
+  }
+}
+
 export const mainTitle = 'Gravity Protocol'
 const previewImagePath = '/img/preview/opengraph_gravity@2x.png'
 
@@ -106,6 +132,10 @@ export const metaTags = [
   },
 ];
 
+export const getTelegramLink = (sections) => sections.community.links.find(item => item.label === 'Telegram')
+export const getDiscordLink = (sections) => sections.community.links.find(item => item.label === 'Discord')
+export const getFAQLink = (sections) => sections.protocol.links.find(item => item.label === 'FAQ')
+export const getDocsLink = (sections) => sections.protocol.links.find(item => item.label === 'Docs')
 export const sections = {
   protocol: {
     label: 'Protocol',
