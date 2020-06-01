@@ -48,18 +48,9 @@ module.exports = {
   modules: ['@aceforth/nuxt-optimized-images', '@nuxtjs/sitemap'],
 
   router: {
-    routes: [
-      {
-        name: 'index',
-        path: '/',
-        component: 'pages/index.vue'
-      },
-      {
-        name: 'wp',
-        path: '/whitepaper',
-        component: 'pages/whitepaper.vue'
-      },
-    ]
+    generate: {
+      routes: ['whitepaper']
+    }
   },
 
   optimizedImages: {
