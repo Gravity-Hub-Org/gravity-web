@@ -23,14 +23,43 @@ export const flattenSections = sections => {
   return result;
 };
 
+export const getSitemap = () => {
+
+  return {
+    hostname: 'https://gravity.tech',
+    // gzip: true,
+    routes: [
+      {
+        url: '/whitepaper',
+        priority: 1,
+      },
+      {
+        url: '/docs',
+        priority: 1,
+      },
+      {
+        url: '/faq',
+        priority: 1,
+      },
+      {
+        url: '/blog',
+        priority: 1,
+      }
+    ]
+  }
+}
+
+export const mainTitle = 'Gravity Protocol'
+const previewImagePath = '/img/preview/opengraph_gravity@2x.png'
+
+export const shortDescription = 'Oracles and Interchain Communication Network'
+const longDescription = `
+An all-encompassing, blockchain-agnostic oracle system that supports communication of blockchains with the outside world, 
+cross-chain communication, and integration of sidechains, within a single unified structure
+`
 export const metaTags = [
   {
     charset: 'utf-8',
-  },
-  {
-    hid: 'description',
-    name: 'description',
-    content: `Blockchain Agnostic Oracles and Interchain Communication Network.`,
   },
   {
     name: 'keywords',
@@ -38,7 +67,7 @@ export const metaTags = [
       'blockchain, crosschain, interchain, oracles, datafeeds, waves, ethereum, bitcoin, gateways, consensus, smartcontract, ride, solidity',
   },
   {
-    content: 'Gravity',
+    content: shortDescription,
     property: 'og:title',
   },
   {
@@ -46,16 +75,32 @@ export const metaTags = [
     property: 'og:url',
   },
   {
-    content: 'Gravity',
+    content: 'Gravity Protocol',
     property: 'og:site_name',
   },
   {
-    content: 'Gravity',
+    name: 'og:image',
+    content: previewImagePath
+  },
+  {
+    content: 'Gravity Protocol',
     property: 'twitter:site',
   },
   {
-    content: 'index.html',
-    property: 'og:url',
+    content: shortDescription,
+    property: 'twitter:title',
+  },
+  {
+    name: 'twitter:image',
+    content: previewImagePath
+  },
+  {
+    name: 'twitter:image:src',
+    content: previewImagePath
+  },
+  {
+    name: 'twitter:card',
+    content: 'summary_large_image'
   },
   {
     content: 'all',
@@ -70,12 +115,27 @@ export const metaTags = [
     content: 'width=device-width, initial-scale=1',
   },
   {
-    hid: 'description',
+    name: 'apple-mobile-web-app-status-bar-style',
+    content: 'black',
+  },
+  {
+    name: 'apple-mobile-web-app-capable',
+    content: 'yes',
+  },
+  {
+    name: 'format-detection',
+    content: 'email=no',
+  },
+  {
     name: 'description',
-    content: `Gravity | Blockchain Agnostic Oracles and Interchain Communication Network.`,
+    content: longDescription,
   },
 ];
 
+export const getTelegramLink = (sections) => sections.community.links.find(item => item.label === 'Telegram')
+export const getDiscordLink = (sections) => sections.community.links.find(item => item.label === 'Discord')
+export const getFAQLink = (sections) => sections.protocol.links.find(item => item.label === 'FAQ')
+export const getDocsLink = (sections) => sections.protocol.links.find(item => item.label === 'Docs')
 export const sections = {
   protocol: {
     label: 'Protocol',
@@ -87,12 +147,12 @@ export const sections = {
       },
       {
         label: 'FAQ',
-        link: 'https://faq.gravityhub.org',
+        link: 'https://medium.com/@gravity_protocol',
         target: '_blank',
       },
       {
         label: 'GitHub',
-        link: 'https://github.com/Gravity-Hub-Org',
+        link: 'https://github.com/Gravity-Tech',
         target: '_blank',
       },
       {
@@ -107,17 +167,17 @@ export const sections = {
     links: [
       {
         label: 'Telegram',
-        link: 'https://t.me/gravityhuborg',
+        link: 'https://t.me/gravity_protocol',
         target: '_blank',
       },
       {
         label: 'Discord',
-        link: 'https://discord.gg/mSRAdB ',
+        link: 'https://discord.gg/ANZKhTw',
         target: '_blank',
       },
       {
         label: 'Reddit',
-        link: 'https://www.reddit.com/user/GravityHubOrg',
+        link: 'https://www.reddit.com/user/Gravity_protocol',
         target: '_blank',
       },
     ],
@@ -127,17 +187,17 @@ export const sections = {
     links: [
       {
         label: 'Blog',
-        link: 'https://medium.com/@gravity_hub',
+        link: 'https://medium.com/@gravity_protocol',
         target: '_blank',
       },
       {
         label: 'Twitter',
-        link: 'https://twitter.com/@gravity_hub ',
+        link: 'https://twitter.com/ProtocolGravity',
         target: '_blank',
       },
       {
         label: 'LinkedIn',
-        link: 'https://www.linkedin.com/company/gravity-hub',
+        link: 'www.linkedin.com/company/gravity-protocol',
         target: '_blank',
       },
     ],

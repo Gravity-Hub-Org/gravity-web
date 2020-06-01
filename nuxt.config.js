@@ -1,11 +1,11 @@
-const { sections, metaTags, flattenSections } = require('./src/global/links');
+const { sections, metaTags, flattenSections, shortDescription, getSitemap } = require('./src/global/links');
 
 module.exports = {
   /*
    ** Headers of the page
    */
   head: {
-    title: 'Gravity Protocol',
+    title: shortDescription,
     meta: metaTags,
     link: [
       {
@@ -47,10 +47,25 @@ module.exports = {
   srcDir: 'src/',
   modules: ['@aceforth/nuxt-optimized-images', '@nuxtjs/sitemap'],
 
+  router: {
+    routes: [
+      {
+        name: 'index',
+        path: '/',
+        component: 'pages/index.vue'
+      },
+      {
+        name: 'wp',
+        path: '/whitepaper',
+        component: 'pages/whitepaper.vue'
+      },
+    ]
+  },
+
   optimizedImages: {
     optimizeImagesInDev: true,
     optimizeImages: true,
   },
 
-  sitemap: false,
+  sitemap: getSitemap(),
 };
