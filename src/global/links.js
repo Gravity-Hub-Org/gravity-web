@@ -136,6 +136,71 @@ export const getTelegramLink = (sections) => sections.community.links.find(item 
 export const getDiscordLink = (sections) => sections.community.links.find(item => item.label === 'Discord')
 export const getFAQLink = (sections) => sections.protocol.links.find(item => item.label === 'FAQ')
 export const getDocsLink = (sections) => sections.protocol.links.find(item => item.label === 'Docs')
+
+export const internalProtocolLinks = {
+  links: [
+    {
+      label: 'Whitepaper',
+      link: '/whitepaper',
+      target: '_blank',
+    },
+    {
+      label: 'FAQ',
+      link: '/faq',
+      target: '_blank',
+    },
+    {
+      label: 'Docs',
+      link: '/docs',
+      target: '_blank',
+    },
+  ],
+}
+export const internalNewsLinks = {
+  links: [
+    {
+      label: 'Blog',
+      link: '/blog',
+      target: '_blank',
+    },
+  ],
+}
+
+const filterObjectListBy = (objectsList, fieldName) => {
+  const res = [];
+
+  for (const obj of objectsList) {
+    const resultsMapped = res.map(item => item[fieldName])
+
+    if (resultsMapped.includes(obj[fieldName])) {
+      continue
+    }
+
+    res.push(obj)
+  }
+
+  return res
+}
+export const constructPreviewLinks = (sections) => {
+
+  return {
+    ...sections,
+    protocol: {
+      ...sections.protocol,
+      links: filterObjectListBy([
+        ...internalProtocolLinks.links,
+        ...sections.protocol.links,
+      ], 'label')
+    },
+    news: {
+      ...sections.news,
+      links: filterObjectListBy([
+        ...internalNewsLinks.links,
+        ...sections.news.links,
+      ], 'label')
+    },
+  }
+}
 export const sections = {
   protocol: {
     label: 'Protocol',
@@ -157,7 +222,7 @@ export const sections = {
       },
       {
         label: 'Docs',
-        link: 'https://docs.gravityhub.org',
+        link: 'https://github.com/Gravity-Tech',
         target: '_blank',
       },
     ],
@@ -197,7 +262,7 @@ export const sections = {
       },
       {
         label: 'LinkedIn',
-        link: 'www.linkedin.com/company/gravity-protocol',
+        link: 'https://linkedin.com/company/gravity-protocol',
         target: '_blank',
       },
     ],

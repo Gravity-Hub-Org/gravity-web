@@ -23,14 +23,14 @@
 
 <script>
 import Menu from './Menu.vue';
-import { sections, contactInfo } from '../../global/links'
+import { constructPreviewLinks, sections, contactInfo } from '../../global/links'
 
 export default {
   props: ['openMenu'],
   data: function() {
     return {
       contactInfo,
-      sections,
+      sections: constructPreviewLinks(sections),
     };
   },
 };
