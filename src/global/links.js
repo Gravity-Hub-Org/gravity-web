@@ -73,6 +73,10 @@ export const metaTags = [
     content: previewImagePath
   },
   {
+    name: 'twitter:card',
+    content: 'summary_large_image'
+  },
+  {
     content: 'all',
     property: 'robots',
   },
