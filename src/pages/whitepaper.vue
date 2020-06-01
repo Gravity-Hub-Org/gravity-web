@@ -6,7 +6,7 @@
 export default {
   fetch(params) {
     const { redirect } = params;
-    redirect(301, `docs/whitepaper.pdf`);
+    redirect(301, `/docs/whitepaper.pdf`);
   },
 };
 </script>

@@ -207,7 +207,7 @@ export const sections = {
     links: [
       {
         label: 'Privacy Policy',
-        link: 'https://legal.gravityhub.org',
+        link: 'https://docs.google.com/document/d/1m2usOhWP873r04cBROfQxddt5HpCEC5f6gppdySWjw4/edit?usp=sharing',
         target: '_blank',
       },
       {
