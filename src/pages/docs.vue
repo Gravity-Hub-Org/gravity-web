@@ -6,8 +6,9 @@
 import { sections, getDocsLink } from '../global/links';
 
 export default {
-  fetch (params) {
-    redirect(301, getDocsLink(sections).link)
-  }
+  fetch(params) {
+    const { redirect } = params;
+    redirect(301, getDocsLink(sections).link);
+  },
 };
 </script>
