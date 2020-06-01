@@ -23,14 +23,11 @@ export const flattenSections = sections => {
   return result;
 };
 
+
+const previewImagePath =  '/img/preview/opengraph_gravity.png'
 export const metaTags = [
   {
     charset: 'utf-8',
-  },
-  {
-    hid: 'description',
-    name: 'description',
-    content: `Blockchain Agnostic Oracles and Interchain Communication Network.`,
   },
   {
     name: 'keywords',
@@ -56,6 +53,22 @@ export const metaTags = [
   {
     content: 'index.html',
     property: 'og:url',
+  },
+  {
+    name: 'og:image',
+    content: previewImagePath
+  },
+  {
+    name: 'og:image',
+    content: previewImagePath
+  },
+  {
+    name: 'twitter:image',
+    content: previewImagePath
+  },
+  {
+    name: 'twitter:image:src',
+    content: previewImagePath
   },
   {
     content: 'all',
