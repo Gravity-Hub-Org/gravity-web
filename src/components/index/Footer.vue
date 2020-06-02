@@ -49,6 +49,10 @@ footer {
     margin-top: 0px;
   }
 
+  @include b(mobile) {
+    margin-top: 30px;
+  }
+
   .container {
     max-width: 1300px;
     display: grid;

@@ -38,6 +38,7 @@ section.header {
   @include bb(endmobile, 0) {
     padding-top: 100px;
     height: auto;
+    background-image: unset;
   }
 
   .container {
@@ -89,10 +90,17 @@ section.header {
         }
 
         @include bb(endmobile, 0) {
-          display: grid;
-          grid-template-columns: 1fr;
-          grid-gap: 0;
-          grid-template-rows: 300px 300px;
+          // display: grid;
+          // grid-template-columns: 1fr;
+          // grid-gap: 0;
+          // grid-template-rows: 300px 300px;
+
+
+          display: block;
+
+          & > :nth-child(2) {
+            display: none;
+          }
         }
       }
 
@@ -153,7 +161,10 @@ section.header {
             @include bb(endmobile, 0) {
               font-size: 45px;
               line-height: 45px;
+              display: none;
             }
+
+
           }
 
           span {
@@ -171,8 +182,11 @@ section.header {
             }
 
             @include bb(endmobile, 0) {
-              font-size: 16px;
-              line-height: 23px;
+              font-family: Orbitron;
+              font-style: normal;
+              font-weight: 900;
+              font-size: 30px;
+              line-height: 32px;
             }
           }
 
@@ -180,7 +194,7 @@ section.header {
             font-weight: 200;
             font-size: 17px;
             line-height: 27px;
-            opacity: 0.75;
+            // opacity: 0.75;
 
             @include bb(tablet, 0) {
               font-size: 15px;
