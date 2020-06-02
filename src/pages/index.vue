@@ -71,11 +71,13 @@ section.block {
           @include b(mobile) {
             font-size: 14px;
             line-height: 24px;
+            opacity: 1;
           }
 
           @include bb(tablet, 0) {
             font-size: 15px;
             line-height: 24px;
+            opacity: 1;
           }
 
           &-title {
@@ -83,11 +85,12 @@ section.block {
             font-size: 48px;
             margin-bottom: 40px;
             font-weight: bold;
-            opacity: 0.8 !important;
+            opacity: 0.8;
 
             @include b(mobile) {
               font-size: 30px;
               margin-bottom: 30px;
+              opacity: 1;
             }
           }
         }
@@ -107,6 +110,12 @@ section.block {
         &-text {
           width: 100%;
           opacity: 0.74;
+
+          @include b(tablet) {
+            font-size: 14px;
+            line-height: 24px;
+            opacity: 1;
+          }
 
           &-wrap {
             @include b(mobile) {

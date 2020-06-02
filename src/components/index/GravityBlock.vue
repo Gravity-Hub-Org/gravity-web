@@ -105,7 +105,7 @@ section.section-gravity-hub {
           font-size: 48px;
           line-height: 50px;
           margin-bottom: 40px;
-          opacity: 0.8 !important;
+          opacity: 0.8;
 
           @include bb(tablet, 0) {
             font-size: 30px;
@@ -117,6 +117,10 @@ section.section-gravity-hub {
             font-size: 25px;
             line-height: 20px;
             margin-bottom: 30px;
+          }
+
+          @include b(tablet) {
+            opacity: 1;
           }
         }
       }
@@ -141,8 +145,9 @@ section.section-gravity-hub {
         }
 
         @include b(mobile) {
-          max-width: 240px;
+          max-width: 320px;
           margin-top: 10px;
+          width: calc(100vw - 40px);
         }
       }
 
