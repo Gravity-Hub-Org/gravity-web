@@ -85,11 +85,12 @@ section.block {
             font-size: 48px;
             margin-bottom: 40px;
             font-weight: bold;
-            opacity: 0.8 !important;
+            opacity: 0.8;
 
             @include b(mobile) {
               font-size: 30px;
               margin-bottom: 30px;
+              opacity: 1;
             }
           }
         }

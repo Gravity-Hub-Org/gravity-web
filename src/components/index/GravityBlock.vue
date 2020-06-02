@@ -105,7 +105,7 @@ section.section-gravity-hub {
           font-size: 48px;
           line-height: 50px;
           margin-bottom: 40px;
-          opacity: 0.8 !important;
+          opacity: 0.8;
 
           @include bb(tablet, 0) {
             font-size: 30px;

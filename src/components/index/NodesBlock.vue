@@ -93,6 +93,10 @@
             &-title {
               opacity: 0.8;
             }
+
+            @include b(mobile) {
+              opacity: 1;
+            }
           }
         }
       }
