@@ -6,7 +6,7 @@
           h1.text.text-title
             | Gravity
             |
-          span.text.text-accent Oracles and Interchain Communication Network 
+          span.text.text-accent Oracles and Cross-chain Communication Network
           p.text A blockchain-agnostic oracle system that supports communication of blockchains with the outside world, cross-chain communication, and sidechains within a single unified structure.
         div.header-block-gravity
 
