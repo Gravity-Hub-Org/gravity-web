@@ -3,7 +3,7 @@
     div.container-content
       div.block-gravity-hub
         h2.text.text-title Join the Gravity network!
-        p.text Gravity is an open source software with transparent mechanisms for introducing changes and improvements. Join the community of open source developers and service providers to contribute to the success of web3.0!
+        p.text Gravity is an open-source technology with transparent mechanisms for introducing changes and improvements. Join the community of open-source developers and service providers to contribute to the success of web3.0!
         span.button.button-orange(v-on:click="openModal()") Join us
 </template>
 
