@@ -4,10 +4,7 @@
       div.block-text
         div.block-text-wrap
           h2.text.text-title Blockchain agnostic
-          p.text
-            b Gravity Node
-            |  is a middleware that establishes communication between blockchains amongst themselves and connects them to the external world. As a truly blockchain-agnostic solution, Gravity requires no dedicated utility token, which greatly reduces the overall complexity.
-          p.text The Gravity network provides straightforward interoperability at the levels of protocols and decentralized software, allowing applications to easily exchange data across different blockchains.
+          p.text Blockchain-agnosticism is limited if proposing a technological solution involves adding one more architectural layer. By ensuring parity of the respective interconnected blockchains, Gravity circumvents the need for a dedicated blockchain and token, with the intention to achieve increased efficiency, security and inclusivity. As such, Gravity is designed to be a truly blockchain-agnostic protocol. Ultimately, Gravity protocol intends to address scalability challenges by providing a solid infrastructure for the creation of gateways, cross-chain applications, and sidechains.
       div.block-image
         img.block-image-wrap(src='img/nodes.png',alt='nodes')
 </template>
