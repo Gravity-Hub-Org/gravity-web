@@ -242,7 +242,7 @@ export const sections = {
       },
       {
         label: 'Reddit',
-        link: 'https://www.reddit.com/user/Gravity_protocol',
+        link: 'https://www.reddit.com/r/Protocol_Gravity/',
         target: '_blank',
       },
     ],
