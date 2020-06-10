@@ -48,9 +48,14 @@ module.exports = {
   modules: [
     '@aceforth/nuxt-optimized-images',
     '@nuxtjs/sitemap',
-    ['@nuxtjs/google-tag-manager', { id: 'UA-168552658-1' }],
+    // ['@nuxtjs/google-tag-manager', { id: 'UA-168552658-1' }],
+    // '@nuxtjs/gtm'
   ],
-
+  buildModules: [
+    ['@nuxtjs/google-analytics', {
+      id: 'UA-168552658-1'
+    }]
+  ],
   router: {
     generate: {
       routes: ['whitepaper']
