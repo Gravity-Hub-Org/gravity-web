@@ -91,15 +91,15 @@ export const metaTags = [
     property: 'twitter:title',
   },
   {
-    name: 'twitter:image',
+    property: 'twitter:image',
     content: previewImagePath
   },
   {
-    name: 'twitter:image:src',
+    property: 'twitter:image:src',
     content: previewImagePath
   },
   {
-    name: 'twitter:card',
+    property: 'twitter:card',
     content: 'summary_large_image'
   },
   {
