@@ -50,7 +50,7 @@ export const getSitemap = () => {
 }
 
 export const mainTitle = 'Gravity Protocol'
-const previewImagePath = '/img/preview/preview_GH@1x.png'
+const previewImagePath = 'https://alpha.gravityhub.org/img/preview/preview_GH@1x.png'
 
 export const shortDescription = 'Oracles and Cross-chain Communication Network'
 const longDescription = `
