@@ -100,7 +100,7 @@ export const metaTags = [
   },
   {
     name: 'twitter:card',
-    content: previewImagePath
+    content: 'summary'
   },
   {
     content: 'all',
