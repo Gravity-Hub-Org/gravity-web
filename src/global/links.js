@@ -79,7 +79,7 @@ export const metaTags = [
     property: 'og:site_name',
   },
   {
-    name: 'og:image',
+    property: 'og:image',
     content: previewImagePath
   },
   {
@@ -104,7 +104,7 @@ export const metaTags = [
   },
   {
     content: 'all',
-    property: 'robots',
+    name: 'robots',
   },
   {
     content: 'website',
