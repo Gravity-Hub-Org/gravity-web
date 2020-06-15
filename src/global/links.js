@@ -50,7 +50,7 @@ export const getSitemap = () => {
 }
 
 export const mainTitle = 'Gravity Protocol'
-const previewImagePath = '/img/preview/opengraph_gravity@2x.png'
+const previewImagePath = '/img/preview/preview_GH@1x.png'
 
 export const shortDescription = 'Oracles and Cross-chain Communication Network'
 const longDescription = `
@@ -100,7 +100,7 @@ export const metaTags = [
   },
   {
     name: 'twitter:card',
-    content: 'summary_large_image'
+    content: previewImagePath
   },
   {
     content: 'all',
