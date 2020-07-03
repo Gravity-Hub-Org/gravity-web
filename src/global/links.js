@@ -141,7 +141,7 @@ export const internalProtocolLinks = {
   links: [
     {
       label: 'Whitepaper',
-      link: '/docs/whitepaper.pdf',
+      link: '/whitepaper',
       target: '_blank',
     },
     {
