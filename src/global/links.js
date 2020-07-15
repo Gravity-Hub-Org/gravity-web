@@ -212,7 +212,7 @@ export const sections = {
       },
       {
         label: 'FAQ',
-        link: 'https://medium.com/@gravity_protocol',
+        link: 'https://medium.com/@gravity_protocol/gravity-protocol-faq-9092bc9c5cf7',
         target: '_blank',
       },
       {
