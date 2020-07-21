@@ -34,6 +34,10 @@ export const getSitemap = () => {
         priority: 1,
       },
       {
+        url: '/explorer',
+        priority: 1,
+      },
+      {
         url: '/docs',
         priority: 1,
       },
@@ -225,6 +229,11 @@ export const sections = {
         link: 'https://github.com/Gravity-Tech',
         target: '_blank',
       },
+      {
+        label: 'Demo',
+        link: '/explorer',
+        target: '_blank',
+      }
     ],
   },
   community: {
