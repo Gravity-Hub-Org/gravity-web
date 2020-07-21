@@ -3,12 +3,12 @@
 </template>
 
 <script>
-import { sections, getFAQLink } from '../global/links';
+import { sections, getBlogLink } from '../global/links';
 
 export default {
   fetch(params) {
     const { redirect } = params;
-    redirect(301, getFAQLink(sections).link);
+    redirect(301, getBlogLink(sections).link);
   },
 };
 </script>

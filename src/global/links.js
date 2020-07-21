@@ -138,7 +138,8 @@ export const metaTags = [
 
 export const getTelegramLink = (sections) => sections.community.links.find(item => item.label === 'Telegram')
 export const getDiscordLink = (sections) => sections.community.links.find(item => item.label === 'Discord')
-export const getFAQLink = (sections) => sections.protocol.links.find(item => item.label === 'FAQ')
+export const getBlogLink = (sections) => sections.protocol.links.find(item => item.label === 'FAQ')
+export const getFAQLink = () => 'https://medium.com/@gravity_protocol/gravity-protocol-faq-9092bc9c5cf7'
 export const getDocsLink = (sections) => sections.protocol.links.find(item => item.label === 'Docs')
 
 export const internalProtocolLinks = {
