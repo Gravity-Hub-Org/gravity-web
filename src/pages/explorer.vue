@@ -6,7 +6,7 @@
 export default {
   fetch(params) {
     const { redirect } = params;
-    redirect(301, 'https://explorer.gravityhub.org');
+    redirect(301, 'https://explorer.gravity.tech');
   },
 };
 </script>
