@@ -227,7 +227,7 @@ export const sections = {
       },
       {
         label: 'Docs',
-        link: 'https://github.com/Gravity-Tech',
+        link: 'https://docs.gravity.tech',
         target: '_blank',
       },
       {
