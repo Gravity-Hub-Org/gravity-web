@@ -221,6 +221,16 @@ export const sections = {
         target: '_blank',
       },
       {
+        label: 'Privacy policy',
+        link: 'https://explorer.gravity.tech/docs/pdf/Gravity_Privacy_Policy_15.07.2020.pdf',
+        target: '_blank',
+      },
+      {
+        label: 'Terms & Conditions',
+        link: 'https://explorer.gravity.tech/docs/pdf/Gravity_Terms_of_Use_15.07.2020.pdf',
+        target: '_blank',
+      },
+      {
         label: 'GitHub',
         link: 'https://github.com/Gravity-Tech',
         target: '_blank',
