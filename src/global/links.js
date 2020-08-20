@@ -139,7 +139,7 @@ export const metaTags = [
 export const getTelegramLink = (sections) => sections.community.links.find(item => item.label === 'Telegram')
 export const getDiscordLink = (sections) => sections.community.links.find(item => item.label === 'Discord')
 export const getBlogLink = (sections) => sections.protocol.links.find(item => item.label === 'FAQ')
-export const getFAQLink = () => 'https://medium.com/@gravity_protocol'
+export const getFAQLink = () => 'https://medium.com/gravity-protocol'
 export const getDocsLink = (sections) => sections.protocol.links.find(item => item.label === 'Docs')
 
 export const internalProtocolLinks = {
@@ -165,7 +165,7 @@ export const internalNewsLinks = {
   links: [
     {
       label: 'Blog',
-      link: '/blog',
+      link: 'https://medium.com/gravity-protocol',
       target: '_blank',
     },
   ],
@@ -272,7 +272,7 @@ export const sections = {
     links: [
       {
         label: 'Blog',
-        link: 'https://medium.com/@gravity_protocol',
+        link: 'https://medium.com/gravity-protocol',
         target: '_blank',
       },
       {

@@ -1,33 +1,49 @@
 <template lang="pug">
-  section.header-menu-section(v-if="openMenu")
-    div.container
-      div.content
-        div.header-menu
-            div.header-menu-block
-                span.header-menu-block-title {{ sections.protocol.label }}
-                a(v-for="link in sections.protocol.links", :href="link.link", :target="link.target").header-menu-block-link {{ link.label }}
-            div.header-menu-block
-                span.header-menu-block-title {{ sections.community.label }}
-                a(v-for="link in sections.community.links", :href="link.link", :target="link.target").header-menu-block-link {{ link.label }}
-            div.header-menu-block
-                span.header-menu-block-title {{ sections.news.label }}
-                a(v-for="link in sections.news.links", :href="link.link", :target="link.target").header-menu-block-link {{ link.label }}
-            div.header-menu-block
-                span.header-menu-block-title {{ sections.resources.label }}
-                a(v-for="link in sections.resources.links", :href="link.link", :target="link.target").header-menu-block-link {{ link.label }}
-        div.header-info
-            div.header-info-bottom
-                //- img.image(src='img/gravity-footer-text.svg', alt='waves')
-                a(:href='`mailto:${contactInfo.email}`').link {{ contactInfo.email }}
+section.header-menu-section(v-if='openMenu')
+  .container
+    .content
+      .header-menu
+        .header-menu-block
+          span.header-menu-block-title {{ sections.protocol.label }}
+          a.header-menu-block-link(
+            v-for='link in sections.protocol.links',
+            :href='link.link',
+            :target='link.target'
+          ) {{ link.label }}
+        .header-menu-block
+          span.header-menu-block-title {{ sections.community.label }}
+          a.header-menu-block-link(
+            v-for='link in sections.community.links',
+            :href='link.link',
+            :target='link.target'
+          ) {{ link.label }}
+        .header-menu-block
+          span.header-menu-block-title {{ sections.news.label }}
+          a.header-menu-block-link(
+            v-for='link in sections.news.links',
+            :href='link.link',
+            :target='link.target'
+          ) {{ link.label }}
+        .header-menu-block
+          span.header-menu-block-title {{ sections.resources.label }}
+          a.header-menu-block-link(
+            v-for='link in sections.resources.links',
+            :href='link.link',
+            :target='link.target'
+          ) {{ link.label }}
+      .header-info
+        .header-info-bottom
+          //- img.image(src='img/gravity-footer-text.svg', alt='waves')
+          a.link(:href='`mailto:${contactInfo.email}`') {{ contactInfo.email }}
 </template>
 
 <script>
 import Menu from './Menu.vue';
-import { constructPreviewLinks, sections, contactInfo } from '../../global/links'
+import { constructPreviewLinks, sections, contactInfo } from '../../global/links';
 
 export default {
   props: ['openMenu'],
-  data: function() {
+  data: function () {
     return {
       contactInfo,
       sections: constructPreviewLinks(sections),
