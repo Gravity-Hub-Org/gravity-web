@@ -1,53 +1,53 @@
 <template lang="pug">
-  section.login-section(v-if="openLogin")
-    div.container(v-if="!openRegistration")
-      div.close-section(v-on:click="close()")
-        span.close-section-item
-        span.close-section-item
-      div.login-block
-        //- span.login-block-title Connect to get started
-        span.login-block-title Our communities
-        hr
-        span.login-block-join-text Gravity is coming soon!
-        span.login-block-join-text Join to talk with the team and follow the updates
-        div.login-block-join
-          a(:href="links.telegram.link", target="_blank").button.button-telegram-2 {{ links.telegram.label }}
-          a(:href="links.discord.link", target="_blank").button.button-discord {{ links.discord.label }}
-        hr
-        //- div.login-block-buttons
-        //-   span.button.button-waves-signer Waves Signer
-        //-   span.button.button-waves-keeper(v-on:click="openRegistration = !openRegistration") Waves Keeper
-    <registration-section @close-registration="openRegistration = !openRegistration" v-bind:open-registration="openRegistration" />
+section.login-section(v-if='openLogin')
+  .container(v-if='!openRegistration')
+    .close-section(v-on:click='close()')
+      span.close-section-item
+      span.close-section-item
+    .login-block
+      //- span.login-block-title Connect to get started
+      span.login-block-title Our communities
+      hr
+      span.login-block-join-text Gravity is coming soon!
+      span.login-block-join-text Join to talk with the team and follow the updates
+      .login-block-join
+        a.button.button-telegram-2(:href='links.telegram.link', target='_blank') {{ links.telegram.label }}
+        a.button.button-discord(:href='links.discord.link', target='_blank') {{ links.discord.label }}
+      hr
+      //- div.login-block-buttons
+      //-   span.button.button-waves-signer Waves Signer
+      //-   span.button.button-waves-keeper(v-on:click="openRegistration = !openRegistration") Waves Keeper
+  <registration-section @close-registration="openRegistration = !openRegistration" v-bind:open-registration="openRegistration" />
 </template>
 
 <script>
-import RegistrationSection from "./RegistrationSection.vue";
-import { sections, getTelegramLink, getDiscordLink } from '../../global/links'
+import RegistrationSection from './RegistrationSection.vue';
+import { sections, getTelegramLink, getDiscordLink } from '../../global/links';
 
 export default {
-  props: ["openLogin"],
-  data: function() {
+  props: ['openLogin'],
+  data: function () {
     return {
       openRegistration: false,
       links: {
         telegram: getTelegramLink(sections),
-        discord: getDiscordLink(sections)
-      }
+        discord: getDiscordLink(sections),
+      },
     };
   },
   components: {
-    RegistrationSection
+    RegistrationSection,
   },
   methods: {
     close() {
-      this.$emit("close-login");
-    }
-  }
+      this.$emit('close-login');
+    },
+  },
 };
 </script>
 
 <style lang="scss" scope>
-@import "../../assets/scss/mixins/media";
+@import '../../assets/scss/mixins/media';
 
 .close-section {
   @include bb(endmobile, 0) {
@@ -152,14 +152,17 @@ export default {
 
     @include bb(tablet, 0) {
       padding: 40px 20px;
+      text-align: center;
     }
 
     @include b(mobile) {
       padding: 20px 20px;
+      text-align: center;
     }
 
     @include bb(endmobile, 0) {
       padding: 40px 20px;
+      text-align: center;
     }
   }
 }
