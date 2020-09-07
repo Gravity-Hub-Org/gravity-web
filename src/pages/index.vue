@@ -5,22 +5,19 @@
     <nodes-block />
     <watching-block />
     <reaching-block />
-    <sponsor-block />
     <gravity-block />
     <Footer />
   </div>
 </template>
 
 <script>
-import Header from '~/components/index/Header.vue';
-import HeaderBlock from '~/components/index/HeaderBlock.vue';
-import NodesBlock from '~/components/index/NodesBlock.vue';
-import WatchingBlock from '~/components/index/WatchingBlock.vue';
-import ReachingBlock from '~/components/index/ReachingBlock.vue';
-import SponsorBlock from '~/components/index/Sponsor.vue';
-import GravityBlock from '~/components/index/GravityBlock.vue';
-import Footer from '~/components/index/Footer.vue';
-
+import Header from "~/components/index/Header.vue";
+import HeaderBlock from "~/components/index/HeaderBlock.vue";
+import NodesBlock from "~/components/index/NodesBlock.vue";
+import WatchingBlock from "~/components/index/WatchingBlock.vue";
+import ReachingBlock from "~/components/index/ReachingBlock.vue";
+import GravityBlock from "~/components/index/GravityBlock.vue";
+import Footer from "~/components/index/Footer.vue";
 // import AppLogo from "~/components/AppLogo.vue";
 
 export default {
@@ -30,15 +27,14 @@ export default {
     NodesBlock,
     WatchingBlock,
     ReachingBlock,
-    SponsorBlock,
     GravityBlock,
-    Footer,
-  },
+    Footer
+  }
 };
 </script>
 
 <style lang="scss">
-@import '../assets/scss/mixins/media.scss';
+@import "../assets/scss/mixins/media.scss";
 
 section.block {
   padding-top: 100px;
