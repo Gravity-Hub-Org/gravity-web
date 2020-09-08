@@ -14,7 +14,7 @@ section.sponsor-wrap
                 .text-about Swingby provides technology for inter-chain communications based on MPC (multiparty computations), TSS (threshold signatures) and ZK (zero-knowledge). This approach works with any chain and is most helpful with blockchains that lack Turing-complete smart contracts functionality.
                 .status Status:
                   .status-type &nbsp; Validator &nbsp; <img src='~static/img/icons/Vector.svg'>
-                a.link(href='https://swingby.network') https://swingby.network
+                a.link(href='https://swingby.network', target='_blank') https://swingby.network
           .sponsor-item
             <img class='click' src='~static/img/icons/info-1.svg'>
             <img class='img-sponsors' src='img/Logo_VL_2.svg', alt='VLab'>
@@ -22,10 +22,10 @@ section.sponsor-wrap
               .about-sponsor
                 <img class='click' src='~static/img/icons/info-1.svg'>
                 <img class='img-sponsors' src='img/Logo_VL_2.svg', alt='VLab'>
-                .text-about Swingby provides technology for inter-chain communications based on MPC (multiparty computations), TSS (threshold signatures) and ZK (zero-knowledge). This approach works with any chain and is most helpful with blockchains that lack Turing-complete smart contracts functionality.
+                .text-about Ventuary Lab is a leading Web3 & blockchain development team behind the core of the Gravity protocol. Their solutions and products form the foundation for the open financial infrastructure of the future.
                 .status Status:
                   .status-type &nbsp; Validator &nbsp; <img src='~static/img/icons/Vector.svg'>
-                a.link(href='#') Vlab
+                a.link(href='https://venlab.dev', target='_blank') https://venlab.dev
           .sponsor-item
             <img class='click' src='~static/img/icons/info-1.svg'>
             <img class='img-sponsors' src='img/waves_enterprice-1.svg', alt='Waves-enterprice'>
@@ -33,10 +33,10 @@ section.sponsor-wrap
               .about-sponsor
                 <img class='click' src='~static/img/icons/info-1.svg'>
                 <img class='img-sponsors' src='img/waves_enterprice-1.svg', alt='Waves-enterprice'>
-                .text-about Swingby provides technology for inter-chain communications based on MPC (multiparty computations), TSS (threshold signatures) and ZK (zero-knowledge). This approach works with any chain and is most helpful with blockchains that lack Turing-complete smart contracts functionality.
+                .text-about Waves Enterprise is an enterprise-grade hybrid blockchain platform that provides a combination of private and public networks which ensure high throughput, scalability and reliability of solutions, as well as data immutability and confidentiality.
                 .status Status:
                   .status-type &nbsp; Validator &nbsp; <img src='~static/img/icons/Vector.svg'>
-                a.link(href='#') Waves
+                a.link(href='https://wavesenterprise.com/', target='_blank') https://wavesenterprise.com/
           .sponsor-item
             <img class='click' src='~static/img/icons/info-1.svg'>
             <img class='img-sponsors' src='img/waves_exchange-1.svg', alt='Waves-exchange'>
@@ -44,10 +44,10 @@ section.sponsor-wrap
               .about-sponsor
                 <img class='click' src='~static/img/icons/info-1.svg'>
                 <img class='img-sponsors' src='img/waves_exchange-1.svg', alt='Waves-exchange'>
-                .text-about Swingby provides technology for inter-chain communications based on MPC (multiparty computations), TSS (threshold signatures) and ZK (zero-knowledge). This approach works with any chain and is most helpful with blockchains that lack Turing-complete smart contracts functionality.
+                .text-about Waves.Exchange combines the security of a decentralized system with the UX of the best centralized exchanges.
                 .status Status:
                   .status-type &nbsp; Validator &nbsp; <img src='~static/img/icons/Vector.svg'>
-                a.link(href='#') Waves
+                a.link(href='https://waves.exchange', target='_blank') https://waves.exchange
         .block
           .sponsor-item
             <img class='click' src='~static/img/icons/info-1.svg'>
@@ -56,10 +56,10 @@ section.sponsor-wrap
               .about-sponsor
                 <img class='click' src='~static/img/icons/info-1.svg'>
                 <img class='img-sponsors' src='img/1inch.svg', alt='1inch'>
-                .text-about Swingby provides technology for inter-chain communications based on MPC (multiparty computations), TSS (threshold signatures) and ZK (zero-knowledge). This approach works with any chain and is most helpful with blockchains that lack Turing-complete smart contracts functionality.
+                .text-about 1inch is a DEX aggregator focused on the most seamless user experience and best prices in the market. Gravity will connect 1inch to an infrastructure of new, non-Ethereum ecosystems and open the door of the ETH-based DeFi ecosystem to Waves and Neutrino.
                 .status Status:
                   .status-type &nbsp; Validator &nbsp; <img src='~static/img/icons/Vector.svg'>
-                a.link(href='#') 1inch
+                a.link(href='https://1inch.exchange/', target='_blank') https://1inch.exchange/
           .sponsor-item
             <img class='click' src='~static/img/icons/info-1.svg'>
             <img class='img-sponsors' src='img/Tron_logo-1.svg', alt='Tron'>
@@ -67,10 +67,10 @@ section.sponsor-wrap
               .about-sponsor
                 <img class='click' src='~static/img/icons/info-1.svg'>
                 <img class='img-sponsors' src='img/Tron_logo-1.svg', alt='Tron'>
-                .text-about Swingby provides technology for inter-chain communications based on MPC (multiparty computations), TSS (threshold signatures) and ZK (zero-knowledge). This approach works with any chain and is most helpful with blockchains that lack Turing-complete smart contracts functionality.
+                .text-about TRON is a Blockchain-based decentralized operating system based on a cryptocurrency native to the system, known as TRX. TRON and Waves are establishing a bridge through Gravity which will allow both ecosystems to enhance access to services for two user bases.
                 .status Status:
                   .status-type &nbsp; Validator &nbsp; <img src='~static/img/icons/Vector.svg'>
-                a.link(href='#') Tron
+                a.link(href='https://tron.network/', target='_blank') https://tron.network/
           .sponsor-item
             <img class='click' src='~static/img/icons/info-1.svg'>
             <img class='img-sponsors' src='img/ontology-1.svg', alt='Ontology'>
@@ -78,10 +78,10 @@ section.sponsor-wrap
               .about-sponsor
                 <img class='click' src='~static/img/icons/info-1.svg'>
                 <img class='img-sponsors' src='img/ontology-1.svg', alt='Ontology'>
-                .text-about Swingby provides technology for inter-chain communications based on MPC (multiparty computations), TSS (threshold signatures) and ZK (zero-knowledge). This approach works with any chain and is most helpful with blockchains that lack Turing-complete smart contracts functionality.
+                .text-about Ontology is a high performance, open-source blockchain specializing in digital identity and data. Ontology will become one of the target chains of Gravity, among the first integrations with Ethereum and Waves, allowing data from the Ontology network to be used seamlessly in other chains and vice versa.
                 .status Status:
                   .status-type &nbsp; Validator &nbsp; <img src='~static/img/icons/Vector.svg'>
-                a.link(href='#') Ontology
+                a.link(href='https://ont.io/', target='_blank') https://ont.io/
           .sponsor-item
             <img class='click' src='~static/img/icons/info-1.svg'>
             <img class='img-sponsors' src='img/waves_association-1.svg', alt='Waves-associations'>
@@ -89,10 +89,10 @@ section.sponsor-wrap
               .about-sponsor
                 <img class='click' src='~static/img/icons/info-1.svg'>
                 <img class='img-sponsors' src='img/waves_association-1.svg', alt='Waves-association'>
-                .text-about Swingby provides technology for inter-chain communications based on MPC (multiparty computations), TSS (threshold signatures) and ZK (zero-knowledge). This approach works with any chain and is most helpful with blockchains that lack Turing-complete smart contracts functionality.
+                .text-about Waves Association is a non-profit organization dedicated to the global adoption of the Web 3.0 paradigm: fostering research and education, governance within the Waves ecosystem, and providing grants for projects developing on the Waves infrastructure.
                 .status Status:
                   .status-type &nbsp; Validator &nbsp; <img src='~static/img/icons/Vector.svg'>
-                a.link(href='#') Waves
+                a.link(href='https://wavesassociation.org/', target='_blank') https://wavesassociation.org/
         .block
           .sponsor-item
             <img class='click' src='~static/img/icons/info-1.svg'>
@@ -101,10 +101,10 @@ section.sponsor-wrap
               .about-sponsor
                 <img class='click' src='~static/img/icons/info-1.svg'>
                 <img class='img-sponsors' src='img/fetch.svg', alt='Fetch'>
-                .text-about Swingby provides technology for inter-chain communications based on MPC (multiparty computations), TSS (threshold signatures) and ZK (zero-knowledge). This approach works with any chain and is most helpful with blockchains that lack Turing-complete smart contracts functionality.
+                .text-about Fetch.ai is an open-access machine learning network that powers AI infrastructure on top of a decentralized digital economy. The Fetch.ai team is becoming a significant collaborator of Waves & Gravity with an aim to conduct joint R&D for the purpose of bringing increased multi-chain capabilities to Fetch.ai’s system of autonomous economic agents (AEA).
                 .status Status:
                   .status-type &nbsp; Validator &nbsp; <img src='~static/img/icons/Vector.svg'>
-                a.link(href='#') Fetch
+                a.link(href='https://fetch.ai/', target='_blank') https://fetch.ai/
           .sponsor-item
             <img class='click' src='~static/img/icons/info-1.svg'>
             <img class='img-sponsors' src='img/neutrino-1.svg', alt='Neutrino'>
@@ -112,10 +112,10 @@ section.sponsor-wrap
               .about-sponsor
                 <img class='click' src='~static/img/icons/info-1.svg'>
                 <img class='img-sponsors' src='img/neutrino-1.svg', alt='Neutrino'>
-                .text-about Swingby provides technology for inter-chain communications based on MPC (multiparty computations), TSS (threshold signatures) and ZK (zero-knowledge). This approach works with any chain and is most helpful with blockchains that lack Turing-complete smart contracts functionality.
+                .text-about Neutrino is a multi-assetization protocol, crypto-collateralized, powered by Waves and acting as an inter-chain toolkit enabling frictionless DeFi on demand.
                 .status Status:
                   .status-type &nbsp; Validator &nbsp; <img src='~static/img/icons/Vector.svg'>
-                a.link(href='#') Neutrino
+                a.link(href='https://neutrino.at', target='_blank') https://neutrino.at
           .sponsor-item
             <img class='click' src='~static/img/icons/info-1.svg'>
             <img class='img-sponsors' src='img/band.svg', alt='Band'>
@@ -123,10 +123,10 @@ section.sponsor-wrap
               .about-sponsor
                 <img class='click' src='~static/img/icons/info-1.svg'>
                 <img class='img-sponsors' src='img/band.svg', alt='Band'>
-                .text-about Swingby provides technology for inter-chain communications based on MPC (multiparty computations), TSS (threshold signatures) and ZK (zero-knowledge). This approach works with any chain and is most helpful with blockchains that lack Turing-complete smart contracts functionality.
+                .text-about Band Protocol is a cross-chain data oracle platform that aggregates and connects real-world data and APIs to smart contracts. Band Protocol will be providing all types of data ranging from on-chain events used in cross-chain operations such as token transfer to external data sources and APIs that power specific decentralized applications on Gravity.
                 .status Status:
                   .status-type &nbsp; Validator &nbsp; <img src='~static/img/icons/Vector.svg'>
-                a.link(href='#') Band
+                a.link(href='https://bandprotocol.com/', target='_blank') https://bandprotocol.com/
           .sponsor-item
             <img class='click' src='~static/img/icons/info-1.svg'>
             <img class='img-sponsors' src='img/vid.svg', alt='Vid'>
@@ -134,10 +134,10 @@ section.sponsor-wrap
               .about-sponsor
                 <img class='click' src='~static/img/icons/info-1.svg'>
                 <img class='img-sponsors' src='img/vid.svg', alt='Vid'>
-                .text-about Swingby provides technology for inter-chain communications based on MPC (multiparty computations), TSS (threshold signatures) and ZK (zero-knowledge). This approach works with any chain and is most helpful with blockchains that lack Turing-complete smart contracts functionality.
+                .text-about V-ID is a blockchain-powered document certification and verification service. V-ID and the team behind Gravity are pursuing joint R&D activities in the field of ‘document and data’ validation, and verification strategies based on interchain technology.
                 .status Status:
                   .status-type &nbsp; Validator &nbsp; <img src='~static/img/icons/Vector.svg'>
-                a.link(href='#') Vid
+                a.link(href='https://about.v-id.org/', target='_blank') https://about.v-id.org/
 </template>
 
 <script>
@@ -297,15 +297,15 @@ section.sponsor-wrap {
         left: -1px;
         top: -1px;
         width: 246px;
-        height: 348px;
+        height: 370px;
         background: #141623;
         mix-blend-mode: normal;
         border: 1px solid #22243b;
         box-sizing: border-box;
-        padding-top: 12px;
+        padding-top: 20px;
       }
       .text-about {
-        height: 190px;
+        height: 230px;
         width: 206px;
         font-family: Poppins;
         font-style: normal;
@@ -315,7 +315,7 @@ section.sponsor-wrap {
         color: #ffffff;
         mix-blend-mode: normal;
         opacity: 0.74;
-        margin: auto;
+        margin: 18.65px auto 0 auto;
       }
       .status {
         display: flex;
