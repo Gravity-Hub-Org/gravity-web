@@ -295,11 +295,6 @@ export const sections = {
         link: 'https://explorer.gravity.tech/docs/pdf/Gravity_Terms_of_Use_15.07.2020.pdf',
         target: '_blank',
       },
-      {
-        label: 'License',
-        link: '/docs/Gravity_MIT_License-2.pdf',
-        target: '_blank',
-      }
     ],
   },
 };
