@@ -22,10 +22,10 @@ section.sponsor-wrap
               .about-sponsor
                 <img class='click' src='~static/img/icons/info-1.svg'>
                 <img class='img-sponsors' src='img/Logo_VL_2.svg', alt='VLab'>
-                .text-about Ventuary Lab is a leading Web3 & blockchain development team behind the core of the Gravity protocol. Their solutions and products form the foundation for the open financial infrastructure of the future.
+                .text-about Swingby provides technology for inter-chain communications based on MPC (multiparty computations), TSS (threshold signatures) and ZK (zero-knowledge). This approach works with any chain and is most helpful with blockchains that lack Turing-complete smart contracts functionality.
                 .status Status:
                   .status-type &nbsp; Validator &nbsp; <img src='~static/img/icons/Vector.svg'>
-                a.link(href='https://venlab.dev', target='_blank') https://venlab.dev
+                a.link(href='#') Vlab
           .sponsor-item
             <img class='click' src='~static/img/icons/info-1.svg'>
             <img class='img-sponsors' src='img/waves_enterprice-1.svg', alt='Waves-enterprice'>
