@@ -8,14 +8,13 @@
       .text-about {{ item.text }}
       .status Status:
         .status-type &nbsp; {{ item.status }} &nbsp; <img src='~static/img/icons/Vector.svg'>
-      a.link(:href="item.url", target='_blank') {{ item.url }}
+      a.link(:href='item.url', target='_blank') {{ item.url }}
 </template>
 <script>
-
 export default {
   name: 'SponsorItem',
   props: {
-    item: Object
+    item: Object,
   },
 };
 </script>
