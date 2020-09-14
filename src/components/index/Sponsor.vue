@@ -56,14 +56,14 @@ const sponsorsList = [
     imageAlt: '',
     imagePath: 'img/ontology-1.svg',
   },
-  // {
-  //   title: 'Coinranking',
-  //   text: `Coinranking is one of the first node operators with an exemplary reputation among the Waves community and the entire crypto community in general. Coinranking joins Gravity network as a trusted oracle for price feeds.`,
-  //   status: 'Validator',
-  //   url: 'https://coinranking.com',
-  //   imageAlt: '',
-  //   imagePath: '',
-  // },
+  {
+    title: 'Coinranking',
+    text: `Coinranking is one of the first node operators with an exemplary reputation among the Waves community and the entire crypto community in general. Coinranking joins Gravity network as a trusted oracle for price feeds.`,
+    status: 'Validator',
+    url: 'https://coinranking.com',
+    imageAlt: '',
+    imagePath: 'img/coinranking.svg',
+  },
   {
     title: 'VID',
     text: `V-ID is a blockchain-powered document certification and verification service. V-ID and the team behind Gravity are pursuing joint R&D activities in the field of ‘document and data’ validation, and verification strategies based on interchain technology.`,
@@ -122,11 +122,11 @@ export default {
 @import '../../assets/scss/mixins/media.scss';
 
 section.sponsor-wrap {
-  position: relative;
   z-index: 2;
   mix-blend-mode: normal;
   display: flex;
   justify-content: center;
+  position: relative;
 
   @include bb(tablet, 0) {
     display: flex;
@@ -168,6 +168,7 @@ section.sponsor-wrap {
     height: auto;
     @include b(tablet) {
       background: none;
+      margin-left: 20px;
       .click {
         display: block;
       }
@@ -204,6 +205,7 @@ section.sponsor-wrap {
       @include bb(tablet, 0) {
         font-size: 30px;
         line-height: 20px;
+        text-align: start;
       }
 
       @include b(mobile) {
@@ -219,9 +221,9 @@ section.sponsor-wrap {
       }
     }
     .container-img-sponsors {
-      position: relative;
       @include bb(endmobile, 0) {
         position: relative;
+        box-sizing: border-box;
         width: 50%;
         margin-top: 20px;
         .click {
@@ -244,22 +246,24 @@ section.sponsor-wrap {
 
       .block {
         display: flex;
-        justify-content: space-between;
+        flex-wrap: wrap;
+        //position: relative;
+        //justify-content: space-between;
         box-sizing: border-box;
         flex-wrap: wrap;
         @include bb(endmobile, 0) {
-          position: relative;
+          //position: relative;
         }
       }
 
       .sponsor-item {
         display: flex;
-        position: relative;
         justify-content: space-between;
         width: 244px;
         height: 73px;
         margin: 0 14px 14px 0;
         border: 1px solid #22243b;
+        position: relative;
         @include bb(endmobile, 0) {
           flex-basis: 105px;
           padding: 10px;
@@ -270,6 +274,9 @@ section.sponsor-wrap {
 
         &:hover {
           .container-about {
+            position: absolute;
+            top: -1px;
+            left: -1px;
             display: block;
             z-index: 20;
             cursor: pointer;
@@ -279,6 +286,7 @@ section.sponsor-wrap {
 
       .img-sponsors {
         margin: auto;
+        position: relative;
         @include b(300) {
           margin: auto;
         }
@@ -287,22 +295,34 @@ section.sponsor-wrap {
       .container-about {
         display: none;
         @include bb(endmobile, 0) {
-          position: absolute;
+          position: relative;
         }
         .about-sponsor {
+          position: relative;
           display: flex;
           flex-direction: column;
           align-items: flex-start;
           position: absolute;
-          left: -1px;
-          top: -1px;
           width: 244px;
+          top: -1px;
           min-height: 438px;
           height: auto;
           background: #141623;
           mix-blend-mode: normal;
           border: 1px solid #22243b;
           box-sizing: border-box;
+
+          @include bb(endmobile, 0) {
+            .close {
+              display: block;
+            }
+          }
+        }
+        .close {
+          display: none;
+          position: absolute;
+          top: 16px;
+          right: 16px;
         }
         .text-about {
           min-height: 290px;
@@ -352,6 +372,15 @@ section.sponsor-wrap {
         top: 0px;
         left: 0px;
         display: none;
+      }
+    }
+    #closeItem {
+      display: none;
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      @include bb(endmobile, 0) {
+        display: block;
       }
     }
   }
