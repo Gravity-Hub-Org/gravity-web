@@ -6,10 +6,9 @@ section.sponsor-wrap
       .container-img-sponsors
         .block
           //- a(v-for="link in sections.protocol.links", :href="link.link", :target="link.target").footer-menu-block-link
-          SponsorItem(v-for="item in this.sponsors.top" :key="item.title" :item="item")
+          SponsorItem(v-for='item in this.sponsors.top', :key='item.title', :item='item')
         .block
-          SponsorItem(v-for="item in sponsors.bottom" :key="item.title" :item="item")
-          
+          SponsorItem(v-for='item in sponsors.bottom', :key='item.title', :item='item')
 </template>
 
 <script>
@@ -57,14 +56,14 @@ const sponsorsList = [
     imageAlt: '',
     imagePath: 'img/ontology-1.svg',
   },
-  // {
-  //   title: 'Coinranking',
-  //   text: `Coinranking is one of the first node operators with an exemplary reputation among the Waves community and the entire crypto community in general. Coinranking joins Gravity network as a trusted oracle for price feeds.`,
-  //   status: 'Validator',
-  //   url: 'https://coinranking.com',
-  //   imageAlt: '',
-  //   imagePath: '',
-  // },
+  {
+    title: 'Coinranking',
+    text: `Coinranking is one of the first node operators with an exemplary reputation among the Waves community and the entire crypto community in general. Coinranking joins Gravity network as a trusted oracle for price feeds.`,
+    status: 'Validator',
+    url: 'https://coinranking.com',
+    imageAlt: '',
+    imagePath: 'img/coinranking.svg',
+  },
   {
     title: 'VID',
     text: `V-ID is a blockchain-powered document certification and verification service. V-ID and the team behind Gravity are pursuing joint R&D activities in the field of ‘document and data’ validation, and verification strategies based on interchain technology.`,
@@ -93,8 +92,7 @@ const sponsorsList = [
   },
   {
     title: 'Swingby',
-    text: `Swingby is a modern technology of interchain communications based on MPC (multiparty computations), TSS (threshold signatures) and ZK (zero-knowledge). 
-    This approach works with any chain, and is most helpful with blockchains that lack Turing-complete smart contracts functionality. The partnership between Swingby and Gravity is focused on combining two infrastructures designed for cross-chain interaction to build Interchain DeFi together.`,
+    text: `Swingby is a modern technology of interchain communications based on MPC (multiparty computations), TSS (threshold signatures) and ZK (zero-knowledge). This approach works with any chain, and is most helpful with blockchains that lack Turing-complete smart contracts functionality. The partnership between Swingby and Gravity is focused on combining two infrastructures designed for cross-chain interaction to build Interchain DeFi together.`,
     status: 'Validator',
     url: 'https://swingby.network',
     imageAlt: '',
@@ -112,7 +110,7 @@ export default {
   components: {
     SponsorItem,
   },
-  data: function() {
+  data: function () {
     return {
       sponsors,
     };
@@ -124,18 +122,27 @@ export default {
 @import '../../assets/scss/mixins/media.scss';
 
 section.sponsor-wrap {
-  position: relative;
   z-index: 2;
   mix-blend-mode: normal;
   display: flex;
   justify-content: center;
+  position: relative;
 
-  @include b(tablet) {
-    background: none;
+  @include bb(tablet, 0) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
   }
 
+  //@include b(tablet) {
+  //  max-width: 650px;
+  //}
+
   @include b(mobile) {
-    margin-top: 0;
+    padding: 20px;
+    height: auto;
+    background: none;
   }
 }
 
@@ -152,11 +159,11 @@ section.sponsor-wrap {
   }
 
   @include b(mobile) {
-    margin-top: 0;
+    margin: auto;
   }
 
   .block-sponsor-gravity {
-    background: url('~static/img/bg-title-watching.svg') no-repeat center;
+    background: url('/img/bg-title-watching.svg') no-repeat center;
     width: 1042px;
     height: auto;
     @include b(tablet) {
@@ -165,8 +172,20 @@ section.sponsor-wrap {
       .click {
         display: block;
       }
+
       @include bb(endmobile, 0) {
-        flex-wrap: wrap;
+        min-width: 280px;
+        flex-wrap: nowrap;
+        .click {
+          display: block;
+        }
+      }
+
+      @include b(desktop) {
+        flex-wrap: nowrap;
+        .click {
+          display: block;
+        }
       }
     }
 
@@ -184,143 +203,185 @@ section.sponsor-wrap {
       margin-bottom: 72px;
 
       @include bb(tablet, 0) {
-        font-style: normal;
-        font-weight: 900;
-        font-size: 26px;
-        line-height: 30px;
-        letter-spacing: 2.184px;
-        margin-bottom: 30px;
-        margin-left: 20px;
-        .title-text {
-          text-align: start;
-        }
+        font-size: 30px;
+        line-height: 20px;
+        text-align: start;
       }
 
       @include b(mobile) {
         font-size: 25px;
         line-height: 20px;
-        margin-bottom: 30px;
-        .title-text {
-          text-align: start;
-        }
+        margin-bottom: 28px;
+        padding-left: 0px;
+        text-align: start;
       }
 
       @include b(tablet) {
         opacity: 1;
-        .title-text {
-          text-align: start;
-        }
       }
     }
-  }
-  .container-img-sponsors {
-    .block {
-      display: flex;
-      justify-content: space-between;
-      box-sizing: border-box;
-      flex-wrap: wrap;
-    }
-
-    .sponsor-item {
-      position: relative;
-      display: flex;
-      position: relative;
-      justify-content: space-between;
-      width: 245px;
-      height: 73px;
-      margin: 0 14px 14px 0;
-      border: 1px solid #22243b;
+    .container-img-sponsors {
+      @include bb(endmobile, 0) {
+        position: relative;
+        box-sizing: border-box;
+        width: 50%;
+        margin-top: 20px;
+        .click {
+          display: block;
+        }
+      }
 
       @include b(tablet) {
-        background: none;
-        margin-left: 20px;
+        display: flex;
+        flex-wrap: wrap;
+      }
+      @include b(300) {
+        display: flex;
+        margin-top: 20px;
 
         .click {
           display: block;
         }
       }
 
-      @include bb(endmobile, 0) {
-        width: 50%;
-      }
-
-      &:hover {
-        .container-about {
-          display: block;
-          z-index: 20;
+      .block {
+        display: flex;
+        flex-wrap: wrap;
+        //position: relative;
+        //justify-content: space-between;
+        box-sizing: border-box;
+        flex-wrap: wrap;
+        @include bb(endmobile, 0) {
+          //position: relative;
         }
       }
-    }
 
-    .img-sponsors {
-      margin: auto;
-    }
-
-    .container-about {
-      display: none;
-      .about-sponsor {
-        position: relative;
+      .sponsor-item {
         display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        position: absolute;
-        left: -1px;
-        top: -1px;
-        width: 246px;
-        height: 370px;
-        background: #141623;
-        mix-blend-mode: normal;
+        justify-content: space-between;
+        width: 244px;
+        height: 73px;
+        margin: 0 14px 14px 0;
         border: 1px solid #22243b;
-        box-sizing: border-box;
-        padding-top: 20px;
+        position: relative;
+        @include bb(endmobile, 0) {
+          flex-basis: 105px;
+          padding: 10px;
+          .click {
+            display: block;
+          }
+        }
+
+        &:hover {
+          .container-about {
+            position: absolute;
+            top: -1px;
+            left: -1px;
+            display: block;
+            z-index: 20;
+            cursor: pointer;
+          }
+        }
       }
-      .text-about {
-        height: 230px;
-        width: 206px;
+
+      .img-sponsors {
+        margin: auto;
+        position: relative;
+        @include b(300) {
+          margin: auto;
+        }
+      }
+
+      .container-about {
+        display: none;
+        @include bb(endmobile, 0) {
+          position: relative;
+        }
+        .about-sponsor {
+          position: relative;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          position: absolute;
+          width: 244px;
+          top: -1px;
+          min-height: 438px;
+          height: auto;
+          background: #141623;
+          mix-blend-mode: normal;
+          border: 1px solid #22243b;
+          box-sizing: border-box;
+
+          @include bb(endmobile, 0) {
+            .close {
+              display: block;
+            }
+          }
+        }
+        .close {
+          display: none;
+          position: absolute;
+          top: 16px;
+          right: 16px;
+        }
+        .text-about {
+          min-height: 290px;
+          height: auto;
+          width: 206px;
+          font-family: Poppins;
+          font-style: normal;
+          font-weight: 300;
+          font-size: 12px;
+          line-height: 19px;
+          color: #ffffff;
+          mix-blend-mode: normal;
+          opacity: 0.74;
+          margin: 0 auto 0 auto;
+        }
+        .status {
+          display: flex;
+          font-family: Poppins;
+          font-style: normal;
+          font-weight: 300;
+          font-size: 12px;
+          line-height: 20px;
+          color: #ffffff;
+          mix-blend-mode: normal;
+          margin: 0 0 9px 20px;
+        }
+        .status-type {
+          color: #44d7b6;
+          background-image: url('/img/icons/Vector.svg') no-repeat;
+        }
+      }
+      .link {
         font-family: Poppins;
         font-style: normal;
-        font-weight: 300;
+        font-weight: normal;
         font-size: 12px;
-        line-height: 19px;
+        line-height: 20px;
+        text-decoration-line: underline;
         color: #ffffff;
         mix-blend-mode: normal;
         opacity: 0.74;
-        margin: 18.65px auto 0 auto;
+        text-decoration: none;
+        margin: 0 0 24px 20px;
       }
-      .status {
-        display: flex;
-        font-family: Poppins;
-        font-style: normal;
-        font-weight: 300;
-        font-size: 12px;
-        line-height: 20px;
-        color: #ffffff;
-        mix-blend-mode: normal;
-        margin: 0 0 9px 20px;
-      }
-      .status-type {
-        color: #44d7b6;
-        background-image: url('~static/img/icons/Vector.svg') no-repeat;
+      .click {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        display: none;
       }
     }
-    .link {
-      font-family: Poppins;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 12px;
-      line-height: 20px;
-      text-decoration-line: underline;
-      color: #ffffff;
-      mix-blend-mode: normal;
-      opacity: 0.74;
-      text-decoration: none;
-      margin: 0 0 24px 20px;
-    }
-    .click {
-      position: absolute;
-      top: 0px;
-      left: 0px;
+    #closeItem {
       display: none;
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      @include bb(endmobile, 0) {
+        display: block;
+      }
     }
   }
 }

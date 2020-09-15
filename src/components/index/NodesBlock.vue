@@ -1,25 +1,25 @@
 <template lang="pug">
-  section.block.block-nodes
-    div.container-content
-      div.block-text
-        div.block-text-wrap
-          h2.text.text-title Blockchain agnostic
-          p.text Blockchain-agnosticism is limited if proposing a technological solution involves adding one more architectural layer. By ensuring parity of the respective interconnected blockchains, Gravity circumvents the need for a dedicated blockchain and token, with the intention to achieve increased efficiency, security and inclusivity. As such, Gravity is designed to be a truly blockchain-agnostic protocol. Ultimately, Gravity protocol intends to address scalability challenges by providing a solid infrastructure for the creation of gateways, cross-chain applications, and sidechains.
-      div.block-image
-        img.block-image-wrap(src='img/nodes.png',alt='nodes')
+section.block.block-nodes
+  .container-content
+    .block-text
+      .block-text-wrap
+        h2.text.text-title Blockchain agnostic
+        p.text Blockchain-agnosticism is limited if proposing a technological solution involves adding one more architectural layer. By ensuring parity of the respective interconnected blockchains, Gravity circumvents the need for a dedicated blockchain and token, with the intention to achieve increased efficiency, security and inclusivity. As such, Gravity is designed to be a truly blockchain-agnostic protocol. Ultimately, Gravity protocol intends to address scalability challenges by providing a solid infrastructure for the creation of gateways, cross-chain applications, and sidechains.
+    .block-image
+      img.block-image-wrap(src='img/nodes.png', alt='nodes')
 </template>
 
 
 <style lang="scss" scoped>
-@import "../../assets/scss/mixins/media.scss";
-@import "../../assets/scss/mixins/image.scss";
+@import '../../assets/scss/mixins/media.scss';
+@import '../../assets/scss/mixins/image.scss';
 
 .block {
   &-nodes {
     position: relative;
 
     @include before-img(block, 250px, 250px, a) {
-      background-image: url("~static/img/rm_01.png");
+      background-image: url('~static/img/rm_01.png');
       background-size: 100%;
       background-repeat: no-repeat;
       top: -120px;
@@ -54,25 +54,23 @@
 
       .block {
         &-text {
-          background: url("~static/img/bg-title-watching.svg") no-repeat center -10px/90%;
+          background: url('/img/bg-title-watching.svg') no-repeat center -10px/90%;
           padding-right: 70px;
           display: flex;
           justify-content: flex-end;
 
           @include bb(tablet, 0) {
-            background: url("~static/img/bg-title-watching.svg") no-repeat left
-              top/90%;
+            background: url('/img/bg-title-watching.svg') no-repeat left top/90%;
             padding-right: 20px;
           }
 
           @include b(mobile) {
-            background: url("~static/img/bg-title-watching.svg") no-repeat left
-              top/contain;
+            background: url('/img/bg-title-watching.svg') no-repeat left top/contain;
             padding-right: 0px;
           }
 
           @include bb(endmobile, 0) {
-            background: url("~static/img/bg-title-watching.svg") no-repeat -10px -10px/100%;
+            background: url('/img/bg-title-watching.svg') no-repeat -10px -10px/100%;
           }
 
           &-wrap {

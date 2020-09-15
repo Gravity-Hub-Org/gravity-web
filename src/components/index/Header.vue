@@ -1,19 +1,22 @@
 <template lang="pug">
-  header(v-bind:class="{ 'header-fixed' : fixHeader }" :style="{ backgroundColor: headerColor }")
-    div.container
-      span.logo
-      div.nav
-        span.button.button-login(v-on:click="openLogin = !openLogin") Join us
-        //- div.language-select-block
-        //-   div.language-select
-        //-     span.language-selected(v-on:click="openedLngList = !openedLngList", v-bind:class="{ opened: openedLngList }") {{ currLanguage }}
-        //-     div.language-select-list(v-if="openedLngList")
-        //-       span.language-select-list-title(v-for="lng in languagesList", v-if="!lng['active']", v-on:click="setLanguage(lng)") {{ lng['title'] }}
-        div.menu-toggle(v-bind:class="{ 'opened-menu' : openingMenu }", v-on:click="openingMenu = !openingMenu")
-          span.menu-toggle-line
-          span.menu-toggle-line
-      <Menu v-bind:open-menu="openingMenu" />
-      <login-section @close-login="openLogin = !openLogin" v-bind:open-login="openLogin" />
+header(v-bind:class='{ "header-fixed": fixHeader }', :style='{ backgroundColor: headerColor }')
+  .container
+    span.logo
+    .nav
+      span.button.button-login(v-on:click='openLogin = !openLogin') Join us
+      //- div.language-select-block
+      //-   div.language-select
+      //-     span.language-selected(v-on:click="openedLngList = !openedLngList", v-bind:class="{ opened: openedLngList }") {{ currLanguage }}
+      //-     div.language-select-list(v-if="openedLngList")
+      //-       span.language-select-list-title(v-for="lng in languagesList", v-if="!lng['active']", v-on:click="setLanguage(lng)") {{ lng['title'] }}
+      .menu-toggle(
+        v-bind:class='{ "opened-menu": openingMenu }',
+        v-on:click='openingMenu = !openingMenu'
+      )
+        span.menu-toggle-line
+        span.menu-toggle-line
+    <Menu v-bind:open-menu="openingMenu" />
+    <login-section @close-login="openLogin = !openLogin" v-bind:open-login="openLogin" />
 </template>
 
 <script>
@@ -21,7 +24,7 @@ import Menu from './Menu.vue';
 import LoginSection from './LoginSection.vue';
 
 export default {
-  data: function() {
+  data: function () {
     return {
       headerBGOpacity: 0,
       openLogin: false,
@@ -58,7 +61,7 @@ export default {
     LoginSection,
   },
   mounted() {
-    window.addEventListener('scroll', event => {
+    window.addEventListener('scroll', (event) => {
       // window.scrollY > 55 ? (this.fixHeader = true) : (this.fixHeader = false);
       this.fixHeader = window.scrollY > 25;
 
@@ -74,7 +77,7 @@ export default {
     });
 
     const self = this;
-    this.$root.$on('modalLogin', function(state) {
+    this.$root.$on('modalLogin', function (state) {
       self.openLogin = state;
     });
   },
@@ -86,16 +89,16 @@ export default {
     };
   },
   computed: {
-    headerColor: function() {
+    headerColor: function () {
       return `rgba(24, 26, 41, ${this.headerBGOpacity}`;
     },
   },
   methods: {
-    setLanguage: function(event) {
+    setLanguage: function (event) {
       this.currLanguage = event['title'];
       this.openedLngList = false;
 
-      this.languagesList.map(lang => {
+      this.languagesList.map((lang) => {
         if (lang['lng'] === event['lng']) {
           lang['active'] = true;
         } else {

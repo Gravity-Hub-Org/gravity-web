@@ -1,44 +1,60 @@
 <template lang="pug">
-  footer
-    .container
-        div.footer-info
-            span.logo
-            div.footer-info-bottom
-                //- img.image(src='img/gravity-footer-text.svg', alt='waves')
-                a(:href='`mailto:${contactInfo.email}`').link {{ contactInfo.email }}
-                span.copyrights © 2020 Gravity Protocol
-        div.footer-menu
-            div.footer-menu-block
-                span.footer-menu-block-title {{ sections.protocol.label }}
-                a(v-for="link in sections.protocol.links", :href="link.link", :target="link.target").footer-menu-block-link {{ link.label }}
-            div.footer-menu-block
-                span.footer-menu-block-title {{ sections.community.label }}
-                a(v-for="link in sections.community.links", :href="link.link", :target="link.target").footer-menu-block-link {{ link.label }}
-            div.footer-menu-block
-                span.footer-menu-block-title {{ sections.news.label }}
-                a(v-for="link in sections.news.links", :href="link.link", :target="link.target").footer-menu-block-link {{ link.label }}
-            div.footer-menu-block
-                span.footer-menu-block-title {{ sections.resources.label }}
-                a(v-for="link in sections.resources.links", :href="link.link", :target="link.target").footer-menu-block-link {{ link.label }}
+footer
+  .container
+    .footer-info
+      span.logo
+      .footer-info-bottom
+        //- img.image(src='img/gravity-footer-text.svg', alt='waves')
+        a.link(:href='`mailto:${contactInfo.email}`') {{ contactInfo.email }}
+        span.copyrights © 2020 Gravity Protocol
+    .footer-menu
+      .footer-menu-block
+        span.footer-menu-block-title {{ sections.protocol.label }}
+        a.footer-menu-block-link(
+          v-for='link in sections.protocol.links',
+          :href='link.link',
+          :target='link.target'
+        ) {{ link.label }}
+      .footer-menu-block
+        span.footer-menu-block-title {{ sections.community.label }}
+        a.footer-menu-block-link(
+          v-for='link in sections.community.links',
+          :href='link.link',
+          :target='link.target'
+        ) {{ link.label }}
+      .footer-menu-block
+        span.footer-menu-block-title {{ sections.news.label }}
+        a.footer-menu-block-link(
+          v-for='link in sections.news.links',
+          :href='link.link',
+          :target='link.target'
+        ) {{ link.label }}
+      .footer-menu-block
+        span.footer-menu-block-title {{ sections.resources.label }}
+        a.footer-menu-block-link(
+          v-for='link in sections.resources.links',
+          :href='link.link',
+          :target='link.target'
+        ) {{ link.label }}
 </template>
 
 <script>
 import Menu from './Menu.vue';
-import { constructPreviewLinks, contactInfo, sections } from '../../global/links'
+import { constructPreviewLinks, contactInfo, sections } from '../../global/links';
 
 export default {
   props: ['openMenu'],
-  data: function() {
+  data: function () {
     return {
       contactInfo,
-      sections: constructPreviewLinks(sections)
+      sections: constructPreviewLinks(sections),
     };
   },
 };
 </script>
 
 <style lang="scss" scoped>
-@import "../../assets/scss/mixins/media";
+@import '../../assets/scss/mixins/media';
 
 footer {
   z-index: 1;
@@ -59,7 +75,7 @@ footer {
     grid-template-columns: minmax(300px, 370px) minmax(300px, 750px);
     grid-gap: 30px;
     justify-content: space-between;
-    background: url("~static/img/bg-footer.png") no-repeat left -60px / contain;
+    background: url('/img/bg-footer.png') no-repeat left -60px / contain;
     padding: 50px 10px;
 
     @include bb(tablet, 0) {
