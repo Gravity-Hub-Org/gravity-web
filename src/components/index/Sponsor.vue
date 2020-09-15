@@ -163,7 +163,7 @@ section.sponsor-wrap {
   }
 
   .block-sponsor-gravity {
-    background: url('~static/img/bg-title-watching.svg') no-repeat center;
+    background: url('/img/bg-title-watching.svg') no-repeat center;
     width: 1042px;
     height: auto;
     @include b(tablet) {
@@ -351,7 +351,7 @@ section.sponsor-wrap {
         }
         .status-type {
           color: #44d7b6;
-          background-image: url('~static/img/icons/Vector.svg') no-repeat;
+          background-image: url('/img/icons/Vector.svg') no-repeat;
         }
       }
       .link {

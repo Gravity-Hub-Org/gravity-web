@@ -1,10 +1,10 @@
 <template lang="pug">
-  section.section-gravity-hub
-    div.container-content
-      div.block-gravity-hub
-        h2.text.text-title Join the Gravity network!
-        p.text Gravity is an open-source technology with transparent mechanisms for introducing changes and improvements. Join the community of open-source developers and service providers to contribute to the success of web3.0!
-        span.button.button-orange(v-on:click="openModal()") Join us
+section.section-gravity-hub
+  .container-content
+    .block-gravity-hub
+      h2.text.text-title Join the Gravity network!
+      p.text Gravity is an open-source technology with transparent mechanisms for introducing changes and improvements. Join the community of open-source developers and service providers to contribute to the success of web3.0!
+      span.button.button-orange(v-on:click='openModal()') Join us
 </template>
 
 <script>
@@ -16,15 +16,15 @@ export default {
   //   });
   // },
   methods: {
-    openModal: function(state) {
-      this.$root.$emit("modalLogin", true);
-    }
-  }
+    openModal: function (state) {
+      this.$root.$emit('modalLogin', true);
+    },
+  },
 };
 </script>
 
 <style lang="scss" scoped>
-@import "../../assets/scss/mixins/media.scss";
+@import '../../assets/scss/mixins/media.scss';
 
 section.section-gravity-hub {
   display: flex;
@@ -49,7 +49,7 @@ section.section-gravity-hub {
     align-items: center;
     display: flex;
     z-index: 1;
-    background: url("~static/img/space.svg") no-repeat center / 100%;
+    background: url('/img/space.svg') no-repeat center / 100%;
 
     @include bb(tablet, 0) {
       height: 650px;

@@ -1,47 +1,47 @@
 <template lang="pug">
-  div.container.container-registration(v-if="openRegistration")
-    div.close-section(v-on:click="close()")
-      span.close-section-item
-      span.close-section-item
-    div.registration-block
-      h3.registration-block-title Welcome to the Gravity!
-      hr
-      transition(name="fade")
-        registration-steps(v-bind:step="step")
-      hr
-      div.registration-block-buttons
-        span.button.button-registration(v-on:click="step--", v-if="step != 0") Back
-        span.button.button-registration(v-if="step === 0")
-        span.button.button-registration(v-on:click="step++", v-if="step != 3") Next
-        span.button.button-registration(v-if="step === 3",v-on:click="close()") Got it
+.container.container-registration(v-if='openRegistration')
+  .close-section(v-on:click='close()')
+    span.close-section-item
+    span.close-section-item
+  .registration-block
+    h3.registration-block-title Welcome to the Gravity!
+    hr
+    transition(name='fade')
+      registration-steps(v-bind:step='step')
+    hr
+    .registration-block-buttons
+      span.button.button-registration(v-on:click='step--', v-if='step != 0') Back
+      span.button.button-registration(v-if='step === 0')
+      span.button.button-registration(v-on:click='step++', v-if='step != 3') Next
+      span.button.button-registration(v-if='step === 3', v-on:click='close()') Got it
 </template>
 
 <script>
-import RegistrationSteps from "./RegistrationSteps.vue";
+import RegistrationSteps from './RegistrationSteps.vue';
 
 export default {
-  transitions: "fade",
-  props: ["openRegistration"],
-  data: function() {
+  transitions: 'fade',
+  props: ['openRegistration'],
+  data: function () {
     return {
-      step: 0
+      step: 0,
     };
   },
   components: {
-    RegistrationSteps
+    RegistrationSteps,
   },
   methods: {
     close() {
       this.step = 0;
-      this.$emit("close-registration");
-    }
-  }
+      this.$emit('close-registration');
+    },
+  },
 };
 </script>
 
 
 <style lang="scss" scoped>
-@import "../../assets/scss/mixins/media";
+@import '../../assets/scss/mixins/media';
 
 .close-section {
   @include bb(endmobile, 0) {

@@ -1,23 +1,22 @@
 <template lang="pug">
-  section.header
-    div.container
-      div.header-wrap
-        div.header-block-text
-          h1.text.text-title
-            | Gravity
-            |
-          span.text.text-accent Oracles and Cross-chain Communication Network
-          p.text A blockchain-agnostic oracle system that supports communication of blockchains with the outside world, cross-chain communication, and sidechains within a single unified structure.
-        div.header-block-gravity
-
+section.header
+  .container
+    .header-wrap
+      .header-block-text
+        h1.text.text-title
+          | Gravity
+          |
+        span.text.text-accent Oracles and Cross-chain Communication Network
+        p.text A blockchain-agnostic oracle system that supports communication of blockchains with the outside world, cross-chain communication, and sidechains within a single unified structure.
+      .header-block-gravity
 </template>
 
 <style lang="scss" scoped>
-@import "../../assets/scss/mixins/media.scss";
-@import "../../assets/scss/mixins/image.scss";
+@import '../../assets/scss/mixins/media.scss';
+@import '../../assets/scss/mixins/image.scss';
 
 section.header {
-  background-image: url("~static/img/header.png");
+  background-image: url('/img/header.png');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -56,7 +55,7 @@ section.header {
     }
 
     @include after-img(block, 100%, 100%, a) {
-      background-image: url("~static/img/cosmos.svg");
+      background-image: url('/img/cosmos.svg');
       background-size: 80%;
       background-repeat: no-repeat;
       left: 0px;
@@ -95,7 +94,6 @@ section.header {
           // grid-gap: 0;
           // grid-template-rows: 300px 300px;
 
-
           display: block;
 
           & > :nth-child(2) {
@@ -110,7 +108,7 @@ section.header {
           z-index: 1;
 
           @include before-img(block, 350px, 350px, a) {
-            background-image: url("~static/img/triangle.svg");
+            background-image: url('/img/triangle.svg');
             background-position: left;
             background-size: cover;
             background-repeat: no-repeat;
@@ -163,8 +161,6 @@ section.header {
               line-height: 45px;
               display: none;
             }
-
-
           }
 
           span {
@@ -214,7 +210,7 @@ section.header {
         }
 
         &-gravity {
-          background-image: url("~static/img/gravity-header.svg");
+          background-image: url('/img/gravity-header.svg');
           background-position: left;
           background-size: 86%;
           background-repeat: no-repeat;
@@ -236,7 +232,7 @@ section.header {
           }
 
           @include after-img(block, 15px, 190px, a) {
-            // background-image: url("~static/img/gravity-header-text.svg");
+            // background-image: url("/img/gravity-header-text.svg");
             background-size: cover;
             background-repeat: no-repeat;
             top: 31%;
