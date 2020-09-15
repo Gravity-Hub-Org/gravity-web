@@ -92,7 +92,7 @@ const sponsorsList = [
   },
   {
     title: 'Swingby',
-    text: `Swingby is a modern technology of interchain communications based on MPC (multiparty computations), TSS (threshold signatures) and ZK (zero-knowledge)This approach works with any chain, and is most helpful with blockchains that lack Turing-complete smart contracts functionality. The partnership between Swingby and Gravity is focused on combining two infrastructures designed for cross-chain interaction to build Interchain DeFi together.`,
+    text: `Swingby is a modern technology of interchain communications based on MPC (multiparty computations), TSS (threshold signatures) and ZK (zero-knowledge). This approach works with any chain, and is most helpful with blockchains that lack Turing-complete smart contracts functionality. The partnership between Swingby and Gravity is focused on combining two infrastructures designed for cross-chain interaction to build Interchain DeFi together.`,
     status: 'Validator',
     url: 'https://swingby.network',
     imageAlt: '',
