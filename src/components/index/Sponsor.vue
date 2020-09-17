@@ -98,6 +98,22 @@ const sponsorsList = [
     imageAlt: '',
     imagePath: 'img/swingby.svg',
   },
+  {
+    title: 'Suterusu',
+    text: `Suterusu will integrate with Gravity, forming an alliance to further strengthen Gravity’s blockchain agnostic data and interchain communication protocol via Suterusu’s privacy-preserving DeFi functionality.`,
+    status: 'Validator',
+    url: 'https://www.suterusu.io/ ',
+    imageAlt: '',
+    imagePath: 'img/suterusu.svg',
+  },
+  {
+    title: 'Fusion',
+    text: `Fusion Foundation is a non-profit organization building the next-generation infrastructure for decentralized global finance. With Fusion network, the world will enjoy financial transactions that are more accessible, efficient and transparent than previously possible. Fusion and Gravity are joining efforts to establish a portal between their interoperability-focused hubs and commit to cooperate in the creation of a seamless environment for value and information exchange between multiple blockchains.`,
+    status: 'Validator',
+    url: 'https://www.fusion.org/',
+    imageAlt: '',
+    imagePath: 'img/Fusion.svg',
+  },
 ];
 
 const sponsors = {
@@ -305,7 +321,7 @@ section.sponsor-wrap {
           position: absolute;
           width: 244px;
           top: -1px;
-          min-height: 438px;
+          min-height: 454px;
           height: auto;
           background: #141623;
           mix-blend-mode: normal;
@@ -325,7 +341,7 @@ section.sponsor-wrap {
           right: 16px;
         }
         .text-about {
-          min-height: 290px;
+          min-height: 306px;
           height: auto;
           width: 206px;
           font-family: Poppins;
