@@ -117,7 +117,7 @@ const sponsorsList = [
   {
     title: 'Fantom',
     text: `Fantom provides enterprise blockchain services centered around its innovative consensus-as-a-service solution.
-With Fantom, it is possible to build a public or private distributed ledger on a highly-scalable platform with fast settlement times.`,
+    With Fantom, it is possible to build a public or private distributed ledger on a highly-scalable platform with fast settlement times.`,
     status: 'Validator',
     url: 'https://fantom.foundation',
     imageAlt: '',

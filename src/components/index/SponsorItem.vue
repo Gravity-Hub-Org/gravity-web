@@ -3,7 +3,7 @@
   <img class='click' src='/img/icons/info-1.svg'>
   <img class='img-sponsors' :src="item.imagePath", :alt="item.imageAlt">
   .container-about
-    .about-sponsor(v-bind:class='{ active: isActive }')
+    .about-sponsor
       //<img class='close' src='/img/icons/close.svg'>
       //form
         <button class='closeItem' @click='active = !isActive'>x</button>  
