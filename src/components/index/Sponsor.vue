@@ -114,11 +114,20 @@ const sponsorsList = [
     imageAlt: '',
     imagePath: 'img/Fusion.svg',
   },
+  {
+    title: 'Fantom',
+    text: `Fantom provides enterprise blockchain services centered around its innovative consensus-as-a-service solution.
+    With Fantom, it is possible to build a public or private distributed ledger on a highly-scalable platform with fast settlement times.`,
+    status: 'Validator',
+    url: 'https://fantom.foundation',
+    imageAlt: '',
+    imagePath: 'img/fantom.svg',
+  },
 ];
 
 const sponsors = {
-  top: sponsorsList.slice(0, 4),
-  bottom: sponsorsList.slice(4),
+  top: sponsorsList.slice(0, 8),
+  bottom: sponsorsList.slice(8),
 };
 
 export default {
@@ -136,32 +145,27 @@ export default {
 
 <style lang="scss">
 @import '../../assets/scss/mixins/media.scss';
-
 section.sponsor-wrap {
   z-index: 2;
   mix-blend-mode: normal;
   display: flex;
   justify-content: center;
   position: relative;
-
   @include bb(tablet, 0) {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     margin: auto;
   }
-
   //@include b(tablet) {
   //  max-width: 650px;
   //}
-
   @include b(mobile) {
-    padding: 20px;
+    position: relative;
     height: auto;
     background: none;
   }
 }
-
 .container-content-logo {
   max-width: 1042px;
   width: 100%;
@@ -173,22 +177,20 @@ section.sponsor-wrap {
   @include b(tablet) {
     background: none;
   }
-
   @include b(mobile) {
     margin: auto;
   }
-
   .block-sponsor-gravity {
     background: url('/img/bg-title-watching.svg') no-repeat center;
     width: 1042px;
     height: auto;
     @include b(tablet) {
       background: none;
-      margin-left: 20px;
+      margin: 30px 0 0 20px;
+
       .click {
         display: block;
       }
-
       @include bb(endmobile, 0) {
         min-width: 280px;
         flex-wrap: nowrap;
@@ -196,7 +198,6 @@ section.sponsor-wrap {
           display: block;
         }
       }
-
       @include b(desktop) {
         flex-wrap: nowrap;
         .click {
@@ -204,7 +205,6 @@ section.sponsor-wrap {
         }
       }
     }
-
     .title-text {
       font-family: Orbitron;
       font-style: normal;
@@ -217,77 +217,80 @@ section.sponsor-wrap {
       opacity: 0.8;
       text-align: center;
       margin-bottom: 72px;
-
       @include bb(tablet, 0) {
         font-size: 30px;
         line-height: 20px;
-        text-align: start;
+        justify-content: flex-start;
       }
-
       @include b(mobile) {
         font-size: 25px;
         line-height: 20px;
         margin-bottom: 28px;
         padding-left: 0px;
-        text-align: start;
+        justify-content: flex-start;
+        line-height: 54px;
       }
-
       @include b(tablet) {
         opacity: 1;
+        line-height: 30px;
       }
     }
     .container-img-sponsors {
       @include bb(endmobile, 0) {
         position: relative;
         box-sizing: border-box;
-        width: 50%;
+        margin: auto;
         margin-top: 20px;
         .click {
           display: block;
         }
       }
-
       @include b(tablet) {
         display: flex;
         flex-wrap: wrap;
       }
       @include b(300) {
-        display: flex;
+        //display: flex;
         margin-top: 20px;
-
         .click {
           display: block;
         }
       }
-
       .block {
         display: flex;
         flex-wrap: wrap;
-        //position: relative;
-        //justify-content: space-between;
         box-sizing: border-box;
         flex-wrap: wrap;
         @include bb(endmobile, 0) {
-          //position: relative;
+          width: auto;
+          justify-content: center;
+          align-items: center;
+        }
+        @include bb(mobile, 0) {
+          width: auto;
+          justify-content: center;
+        }
+        @include bb(tablet, 0) {
+          width: auto;
+          justify-content: center;
         }
       }
-
       .sponsor-item {
         display: flex;
         justify-content: space-between;
         width: 244px;
         height: 73px;
-        margin: 0 14px 14px 0;
+        margin: 0 10px 10px 0;
         border: 1px solid #22243b;
         position: relative;
         @include bb(endmobile, 0) {
-          flex-basis: 105px;
+          //width: 145px;
+          width: 20vh;
           padding: 10px;
           .click {
             display: block;
           }
         }
-
         &:hover {
           .container-about {
             position: absolute;
@@ -299,7 +302,6 @@ section.sponsor-wrap {
           }
         }
       }
-
       .img-sponsors {
         margin: auto;
         position: relative;
@@ -307,7 +309,6 @@ section.sponsor-wrap {
           margin: auto;
         }
       }
-
       .container-about {
         display: none;
         @include bb(endmobile, 0) {
@@ -321,13 +322,12 @@ section.sponsor-wrap {
           position: absolute;
           width: 244px;
           top: -1px;
-          min-height: 454px;
+          min-height: 465px;
           height: auto;
           background: #141623;
           mix-blend-mode: normal;
           border: 1px solid #22243b;
           box-sizing: border-box;
-
           @include bb(endmobile, 0) {
             .close {
               display: block;
@@ -341,7 +341,7 @@ section.sponsor-wrap {
           right: 16px;
         }
         .text-about {
-          min-height: 306px;
+          min-height: 317px;
           height: auto;
           width: 206px;
           font-family: Poppins;
@@ -390,7 +390,7 @@ section.sponsor-wrap {
         display: none;
       }
     }
-    #closeItem {
+    .closeItem {
       display: none;
       position: absolute;
       top: 10px;

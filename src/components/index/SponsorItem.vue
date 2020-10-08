@@ -5,7 +5,8 @@
   .container-about
     .about-sponsor
       //<img class='close' src='/img/icons/close.svg'>
-      //<button v-bind:class="{ 'opened-Menu' : openingMenu }", v-on:click="openingMenu = !openingMenu") >X</button> 
+      //form
+        <button class='closeItem' @click='active = !isActive'>x</button>  
       <img class='img-sponsors' :src="item.imagePath", :alt="item.imageAlt">
       .text-about {{ item.text }}
       .status Status:

@@ -5,6 +5,7 @@
     <nodes-block />
     <watching-block />
     <reaching-block />
+    <news-block />
     <sponsor-block />
     <gravity-block />
     <Footer />
@@ -17,6 +18,7 @@ import HeaderBlock from '~/components/index/HeaderBlock.vue';
 import NodesBlock from '~/components/index/NodesBlock.vue';
 import WatchingBlock from '~/components/index/WatchingBlock.vue';
 import ReachingBlock from '~/components/index/ReachingBlock.vue';
+import NewsBlock from '~/components/index/News.vue';
 import SponsorBlock from '~/components/index/Sponsor.vue';
 import GravityBlock from '~/components/index/GravityBlock.vue';
 import Footer from '~/components/index/Footer.vue';
@@ -30,6 +32,7 @@ export default {
     NodesBlock,
     WatchingBlock,
     ReachingBlock,
+    NewsBlock,
     SponsorBlock,
     GravityBlock,
     Footer,
