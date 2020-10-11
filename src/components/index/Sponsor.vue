@@ -278,7 +278,7 @@ section.sponsor-wrap {
       .sponsor-item {
         display: flex;
         justify-content: space-between;
-        width: 244px;
+        width: 243px;
         height: 73px;
         margin: 0 10px 10px 0;
         border: 1px solid #22243b;
@@ -320,9 +320,7 @@ section.sponsor-wrap {
           flex-direction: column;
           align-items: flex-start;
           position: absolute;
-          width: 244px;
-          top: -1px;
-          min-height: 465px;
+          width: 243px;
           height: auto;
           background: #141623;
           mix-blend-mode: normal;
@@ -341,7 +339,7 @@ section.sponsor-wrap {
           right: 16px;
         }
         .text-about {
-          min-height: 317px;
+          // min-height: 317px;
           height: auto;
           width: 206px;
           font-family: Poppins;
@@ -352,7 +350,7 @@ section.sponsor-wrap {
           color: #ffffff;
           mix-blend-mode: normal;
           opacity: 0.74;
-          margin: 0 auto 0 auto;
+          margin: 10px auto 10px auto;
         }
         .status {
           display: flex;
@@ -397,6 +395,16 @@ section.sponsor-wrap {
       right: 10px;
       @include bb(endmobile, 0) {
         display: block;
+      }
+    }
+    .sponsor-wrap {
+      display: flex;
+      justify-content: space-between;
+      width: 241px;
+      height: 71px;
+      position: relative;
+      .img-spn {
+        margin: auto;
       }
     }
   }

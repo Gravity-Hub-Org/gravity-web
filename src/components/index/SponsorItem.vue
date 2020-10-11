@@ -7,7 +7,9 @@
       //<img class='close' src='/img/icons/close.svg'>
       //form
         <button class='closeItem' @click='active = !isActive'>x</button>  
-      <img class='img-sponsors' :src="item.imagePath", :alt="item.imageAlt">
+      //<img class='img-sponsors' :src="item.imagePath", :alt="item.imageAlt">
+      .sponsor-wrap 
+        <img class='img-spn' v-bind:src=item.imagePath>
       .text-about {{ item.text }}
       .status Status:
         .status-type &nbsp; {{ item.status }} &nbsp; <img src='/img/icons/Vector.svg'>
