@@ -58,7 +58,7 @@ export default {
   }
 
   @include b(tablet) {
-    max-width: 650px;
+    max-width: 350px;
   }
 }
 .title-text {
@@ -78,11 +78,11 @@ export default {
     justify-content: flex-start;
   }
   @include b(mobile) {
-    font-size: 25px;
+    font-size: 30px;
     line-height: 20px;
     margin-bottom: 28px;
     padding: 0px;
-    padding-left: 20px;
+    padding-left: 25px;
     justify-content: flex-start;
     line-height: 54px;
     background: none;
@@ -112,7 +112,7 @@ export default {
     flex-direction: column;
     flex-wrap: wrap;
     font-size: 15px;
-    margin: 30px 0 0 20px;
+    margin: 30px 0 0 25px;
     max-width: 650px;
     height: 320px;
 
@@ -173,7 +173,7 @@ export default {
   flex-direction: column-reverse;
   align-self: flex-start;
   @include b(tablet) {
-    margin: 30px 0 0 20px;
+    margin: 30px 0 0 25px;
     display: flex;
     justify-content: space-between;
   }
