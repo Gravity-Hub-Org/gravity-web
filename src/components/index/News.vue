@@ -185,9 +185,8 @@ export default {
   margin: 14px 0 17px 0;
 }
 .line {
-  color: #cececf;
   background-color: #cececf;
   height: 1px;
-  border: none;
+  border: 0;
 }
 </style>
