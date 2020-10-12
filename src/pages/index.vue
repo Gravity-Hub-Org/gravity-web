@@ -2,9 +2,6 @@
   <div>
     <Header />
     <header-block />
-    <nodes-block />
-    <watching-block />
-    <reaching-block />
     <news-block />
     <sponsor-block />
     <gravity-block />
@@ -15,9 +12,9 @@
 <script>
 import Header from '~/components/index/Header.vue';
 import HeaderBlock from '~/components/index/HeaderBlock.vue';
-import NodesBlock from '~/components/index/NodesBlock.vue';
-import WatchingBlock from '~/components/index/WatchingBlock.vue';
-import ReachingBlock from '~/components/index/ReachingBlock.vue';
+//import NodesBlock from '~/components/index/NodesBlock.vue';
+//import WatchingBlock from '~/components/index/WatchingBlock.vue';
+//import ReachingBlock from '~/components/index/ReachingBlock.vue';
 import NewsBlock from '~/components/index/News.vue';
 import SponsorBlock from '~/components/index/Sponsor.vue';
 import GravityBlock from '~/components/index/GravityBlock.vue';
@@ -29,9 +26,9 @@ export default {
   components: {
     Header,
     HeaderBlock,
-    NodesBlock,
-    WatchingBlock,
-    ReachingBlock,
+    //NodesBlock,
+    //WatchingBlock,
+    //ReachingBlock,
     NewsBlock,
     SponsorBlock,
     GravityBlock,
