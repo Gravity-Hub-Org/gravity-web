@@ -52,7 +52,7 @@ export default {
 
 .news-wrap {
   width: 1040px;
-  margin: 100px auto 100px auto;
+  margin: 20px auto 20px auto;
   @include bb(tablet, 0) {
     height: 650px;
   }

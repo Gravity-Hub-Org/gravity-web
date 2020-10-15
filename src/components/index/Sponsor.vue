@@ -123,6 +123,30 @@ const sponsorsList = [
     imageAlt: '',
     imagePath: 'img/fantom.svg',
   },
+  {
+    title: 'Ankr',
+    text: `Ankr is building an infrastructure platform and marketplace for Web3-stack deployment. The blockchain infrastructure aims to enable resource providers and end-users to easily connect to blockchain technologies and DeFi applications. The Ankr proprietary cloud infrastructure operates independently from public cloud providers and is powered by geographically distributed enterprise-grade datacenters to increase resilience and stability.`,
+    status: 'Validator',
+    url: 'https://www.ankr.com/',
+    imageAlt: '',
+    imagePath: 'img/ankr.svg',
+  },
+  {
+    title: 'Curve',
+    text: `Curve is an exchange liquidity pool on Ethereum designed for extremely efficient stablecoin trading and low risk, supplemental fee income for liquidity providers, without an opportunity cost.`,
+    status: 'Validator',
+    url: 'https://www.curve.fi/',
+    imageAlt: '',
+    imagePath: 'img/curve.svg',
+  },
+  {
+    title: 'Solana',
+    text: `Founded by former Qualcomm, Intel, and Dropbox engineers in late-2017, Solana is a single-chain, delegated-Proof-of-Stake protocol whose focus is on delivering scalability without sacrificing decentralization or security.`,
+    status: 'Validator',
+    url: 'https://solana.com/',
+    imageAlt: '',
+    imagePath: 'img/solana.svg',
+  },
 ];
 
 const sponsors = {
