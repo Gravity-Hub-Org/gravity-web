@@ -147,6 +147,14 @@ const sponsorsList = [
     imageAlt: '',
     imagePath: 'img/solana.svg',
   },
+  {
+    title: 'Matic Network',
+    text: `Matic is a developer-first hybrid POS+Plasma sidechain on top of Ethereum, enabling Ethereum developers to scale their dApps for large-scale usage. Matic is rapidly becoming the go-to Layer 2 solution for developers, thanks to secure, scalable and instant transactions, secured by Ethereum.`,
+    status: 'Validator',
+    url: 'https://matic.network/',
+    imageAlt: '',
+    imagePath: 'img/matic.svg',
+  },
 ];
 
 const sponsors = {
