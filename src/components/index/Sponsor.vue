@@ -155,6 +155,22 @@ const sponsorsList = [
     imageAlt: '',
     imagePath: 'img/matic.svg',
   },
+  {
+    title: 'ERGO',
+    text: `The Ergo platform aims to provide an efficient, secure, and easy way to implement financial contracts that will be useful and survivable in the long term.`,
+    status: 'Validator',
+    url: 'https://ergoplatform.org/en/',
+    imageAlt: '',
+    imagePath: 'img/ergo.svg',
+  },
+  {
+    title: 'IOST',
+    text: `The open-source IOST project is meant to meet the security and scalability needs of a decentralized economy by providing blockchain infrastructure that might serve as the architecture for the future of online services.`,
+    status: 'Validator',
+    url: 'https://iost.io/',
+    imageAlt: '',
+    imagePath: 'img/iost.png',
+  },
 ];
 
 const sponsors = {
