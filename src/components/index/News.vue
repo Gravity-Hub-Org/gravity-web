@@ -4,13 +4,13 @@ section.news-wrap
   .news-container
     .top-row-news
       .main-news
-        <img class='main'src='/img/SuSy-news.svg'>
+        <img class='main'src='/img/bsc.png'>
         .info-about-main
-          .data 25.09.2020
+          .data 19.10.2020
           a.text-main(
             target='_blank',
-            href='https://medium.com/gravity-protocol/susy-a-blockchain-agnostic-cross-chain-asset-transfer-gateway-protocol-based-on-gravity-9d5b1550e5f4'
-          ) SuSy: a blockchain-agnostic <br> cross-chain assets transfer gateway protocol based on Gravity
+            href='https://medium.com/gravity-protocol/gravity-test-framework-adds-binance-smart-chain-via-ankr-4ab96661ce7b'
+          ) Gravity test framework adds Binance Smart Chain via Ankr
     .bottom-row-news
       .minor-news
         <img class='minor'src='/img/news-1inch.svg'>
