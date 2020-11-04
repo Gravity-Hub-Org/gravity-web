@@ -215,13 +215,12 @@ section.sponsor-wrap {
   }
 }
 .container-content-logo {
-  max-width: 1042px;
   width: 100%;
   justify-content: center;
   align-items: center;
   display: flex;
   flex-wrap: wrap;
-  margin-top: 89px;
+  margin: 89px auto 0 auto;
   @include b(tablet) {
     background: none;
   }
