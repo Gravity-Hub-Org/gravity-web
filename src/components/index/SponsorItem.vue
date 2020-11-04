@@ -4,10 +4,6 @@
   <img class='img-sponsors' :src="item.imagePath", :alt="item.imageAlt">
   .container-about
     .about-sponsor
-      //<img class='close' src='/img/icons/close.svg'>
-      //form
-        <button class='closeItem' @click='active = !isActive'>x</button>  
-      //<img class='img-sponsors' :src="item.imagePath", :alt="item.imageAlt">
       .sponsor-wrap 
         <img class='img-spn' v-bind:src=item.imagePath>
       .text-about {{ item.text }}
