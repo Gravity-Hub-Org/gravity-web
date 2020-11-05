@@ -112,6 +112,7 @@ export default {
         flex-direction: column;
         overflow-y: scroll;
         overflow-x: hidden;
+        justify-content: space-between;
       }
     }
 
@@ -120,7 +121,9 @@ export default {
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
-        margin-top: 200px;
+        @include bb(endmobile, 0) {
+          margin-top: 20px;
+        }
 
         &-bottom {
           img {
