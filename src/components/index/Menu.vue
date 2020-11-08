@@ -121,12 +121,12 @@ export default {
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
+        position: relative;
         @include bb(endmobile, 0) {
           margin-top: 20px;
         }
 
         &-bottom {
-          position: relative;
           img {
             max-width: 210px;
             margin-bottom: 10px;
