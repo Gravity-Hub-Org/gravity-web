@@ -126,6 +126,7 @@ export default {
         }
 
         &-bottom {
+          position: relative;
           img {
             max-width: 210px;
             margin-bottom: 10px;
