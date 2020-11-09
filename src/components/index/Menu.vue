@@ -118,11 +118,12 @@ export default {
 
     .header {
       &-info {
-        //display: flex;
-        //flex-direction: column;
-        //justify-content: flex-end;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
         position: relative;
         @include bb(endmobile, 0) {
+          display: block;
           margin-top: 20px;
         }
 
