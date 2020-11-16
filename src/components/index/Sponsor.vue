@@ -331,11 +331,16 @@ section.sponsor-wrap {
         border: 1px solid #22243b;
         position: relative;
         @include bb(endmobile, 0) {
-          //width: 145px;
-          width: 20vh;
+          width: 49%;
           padding: 10px;
           .click {
             display: block;
+          }
+          &:nth-child(even) {
+            margin: 2px 0 3px 2px;
+          }
+          &:nth-child(odd) {
+            margin: 2px 2px 3px 0;
           }
         }
         &:hover {
