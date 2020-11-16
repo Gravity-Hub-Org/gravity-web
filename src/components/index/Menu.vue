@@ -128,6 +128,7 @@ export default {
         }
 
         &-bottom {
+          display: block;
           img {
             max-width: 210px;
             margin-bottom: 10px;

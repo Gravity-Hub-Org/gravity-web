@@ -233,7 +233,7 @@ section.sponsor-wrap {
     height: auto;
     @include b(tablet) {
       background: none;
-      margin: 30px 0 0 20px;
+      margin: 30px 20px;
 
       .click {
         display: block;
