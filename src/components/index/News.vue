@@ -1,6 +1,8 @@
 <template lang="pug">
 section.news-wrap 
   h2.title-text News
+    a.link-news(href='/', target='_blank') 
+      <img class="arrow" src="/img/icons/arrow-circle.svg">
   .news-container
     .top-row-news
       .main-news
@@ -11,8 +13,16 @@ section.news-wrap
             target='_blank',
             href='https://medium.com/gravity-protocol/gravity-test-framework-adds-binance-smart-chain-via-ankr-4ab96661ce7b'
           ) Gravity test framework adds Binance Smart Chain via Ankr
+          a.news-info(
+            target='_blank',
+            href='https://medium.com/gravity-protocol/gravity-test-framework-adds-binance-smart-chain-via-ankr-4ab96661ce7b'
+          ) See more
     .bottom-row-news
       .minor-news
+        a.news-info(
+          target='_blank',
+          href='https://medium.com/gravity-protocol/1inch-joins-gravity-network-as-interchain-transfer-provider-for-ethereum-ecosystem-386bd80e746b'
+        ) See more
         <img class='minor'src='/img/news-1inch.svg'>
         .info-about
           .data 14.08.2020
@@ -22,6 +32,10 @@ section.news-wrap
             href='https://medium.com/gravity-protocol/1inch-joins-gravity-network-as-interchain-transfer-provider-for-ethereum-ecosystem-386bd80e746b'
           ) 1inch joins Gravity Network as interchain transfer provider for Ethereum ecosystem
       .minor-news
+        a.news-info(
+          target='_blank',
+          href='https://medium.com/gravity-protocol/launching-the-public-demo-network-of-gravity-protocol-8a206ff9bfeb'
+        ) See more
         <img class='minor'src='/img/pablic-demo.svg'>
         .info-about
           .data 21.07.2020
@@ -32,6 +46,10 @@ section.news-wrap
           ) Launching the Public Demo Network of Gravity protocol
           <br/>
       .minor-news
+        a.news-info(
+          target='_blank',
+          href='https://medium.com/gravity-protocol/gravity-collaborates-with-band-protocol-to-secure-blockchain-agnostic-protocol-8b39000412a9'
+        ) See more
         <img class='minor'src='/img/news-band.svg'>
         .info-about
           .data 21.07.2020
@@ -63,6 +81,7 @@ export default {
 }
 .title-text {
   font-family: Orbitron;
+  display: flex;
   color: #cececf;
   font-style: normal;
   font-weight: 900;
@@ -93,7 +112,21 @@ export default {
     padding-left: 20px;
   }
 }
-
+.link-news {
+  padding-left: 10px;
+  display: flex;
+  align-items: center;
+}
+.arrow {
+  padding-top: 2px;
+  transition: 0.5s;
+  @include b(mobile) {
+    transition: 0.5s;
+  }
+  &:hover {
+    transform: scale(1.4);
+  }
+}
 .news-container {
   display: flex;
   flex-direction: column;
@@ -131,6 +164,15 @@ export default {
     .data {
       width: 100px;
     }
+  }
+}
+.news-info {
+  color: #cececf;
+  text-decoration: underline;
+  padding-top: 10px;
+  font-size: 15px;
+  &:hover {
+    opacity: 0.8;
   }
 }
 
