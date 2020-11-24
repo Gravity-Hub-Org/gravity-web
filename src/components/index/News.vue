@@ -167,12 +167,13 @@ export default {
   }
 }
 .news-info {
-  color: #cececf;
-  text-decoration: underline;
+  color: #fff;
+  text-decoration: none;
   padding-top: 10px;
   font-size: 15px;
   &:hover {
-    opacity: 0.8;
+    color: #ff8e1e;
+    opacity: 0.9;
   }
 }
 
@@ -191,7 +192,7 @@ export default {
 }
 .text-main {
   display: block;
-  color: #ff8e1e;
+  color: #fff;
   opacity: 0.9;
   font-size: 24px;
   margin-top: 34px;
