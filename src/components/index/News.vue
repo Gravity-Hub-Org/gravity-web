@@ -6,18 +6,47 @@ section.news-wrap
   .news-container
     .top-row-news
       .main-news
-        <img class='main'src='/img/bsc.png'>
+        <img class='main'src='/img/gravity-main.svg'>
+        .info-about-main
+          .data 14.11.2020
+          a.text-main(target='_blank', href='/') The first application on top of Gravity network — cross-chain gateways between Waves (origin) and BSC (destination) — is now live!
+          <br/>
+          a.news-info(target='_blank', href='/') See more
+      //.main-news
+        <img class='main'src='/img/gravity-demo.png'>
         .info-about-main
           .data 19.10.2020
           a.text-main(
             target='_blank',
-            href='https://medium.com/gravity-protocol/gravity-test-framework-adds-binance-smart-chain-via-ankr-4ab96661ce7b'
-          ) Gravity test framework adds Binance Smart Chain via Ankr
+            href='This video is a brief demo of Gravity SuSy, a crosschain token gateway service based on Gravity Protocol.'
+          ) This video is a brief demo of Gravity SuSy, a crosschain token gateway service based on Gravity Protocol.
           a.news-info(
             target='_blank',
-            href='https://medium.com/gravity-protocol/gravity-test-framework-adds-binance-smart-chain-via-ankr-4ab96661ce7b'
+            href='This video is a brief demo of Gravity SuSy, a crosschain token gateway service based on Gravity Protocol.'
           ) See more
     .bottom-row-news
+      .minor-news
+        a.news-info(target='_blank', href='https://www.youtube.com/watch?v=fRaS9oYFfbM') See more
+        <img class='minor'src='/img/gravity-demo.png'>
+        .info-about
+          .data 23.11.2020
+          <hr class='line' />
+          a.text-minor(target='_blank', href='https://www.youtube.com/watch?v=fRaS9oYFfbM') This video is a brief demo of Gravity SuSy, a crosschain token gateway service based on Gravity Protocol.
+      .minor-news
+        a.news-info(
+          target='_blank',
+          href='https://medium.com/gravity-protocol/gravity-test-framework-adds-binance-smart-chain-via-ankr-4ab96661ce7b'
+        ) See more
+        <img class='minor'src='/img/bsc.png'>
+        .info-about
+          .data 19.10.2020
+          <hr class='line' />
+          a.text-minor(
+            target='_blank',
+            href='https://medium.com/gravity-protocol/gravity-test-framework-adds-binance-smart-chain-via-ankr-4ab96661ce7b'
+          ) Gravity test framework adds Binance Smart Chain via Ankr
+          <br />
+          <br/>
       .minor-news
         a.news-info(
           target='_blank',
@@ -31,33 +60,7 @@ section.news-wrap
             target='_blank',
             href='https://medium.com/gravity-protocol/1inch-joins-gravity-network-as-interchain-transfer-provider-for-ethereum-ecosystem-386bd80e746b'
           ) 1inch joins Gravity Network as interchain transfer provider for Ethereum ecosystem
-      .minor-news
-        a.news-info(
-          target='_blank',
-          href='https://medium.com/gravity-protocol/launching-the-public-demo-network-of-gravity-protocol-8a206ff9bfeb'
-        ) See more
-        <img class='minor'src='/img/pablic-demo.svg'>
-        .info-about
-          .data 21.07.2020
-          <hr class='line' />
-          a.text-minor(
-            target='_blank',
-            href='https://medium.com/gravity-protocol/launching-the-public-demo-network-of-gravity-protocol-8a206ff9bfeb'
-          ) Launching the Public Demo Network of Gravity protocol
-          <br/>
-      .minor-news
-        a.news-info(
-          target='_blank',
-          href='https://medium.com/gravity-protocol/gravity-collaborates-with-band-protocol-to-secure-blockchain-agnostic-protocol-8b39000412a9'
-        ) See more
-        <img class='minor'src='/img/news-band.svg'>
-        .info-about
-          .data 21.07.2020
-          <hr class='line' />
-          a.text-minor(
-            target='_blank',
-            href='https://medium.com/gravity-protocol/gravity-collaborates-with-band-protocol-to-secure-blockchain-agnostic-protocol-8b39000412a9'
-          ) Gravity Collaborates With Band Protocol To Secure Blockchain-Agnostic Protocol
+          <br />
 </template>
 <script>
 export default {
