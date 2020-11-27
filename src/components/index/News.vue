@@ -1,7 +1,7 @@
 <template lang="pug">
 section.news-wrap 
   h2.title-text News
-    a.link-news(href='/', target='_blank') 
+    a.link-news(href='https://medium.com/gravity-protocol', target='_blank') 
       <img class="arrow" src="/img/icons/arrow-circle.svg">
   .news-container
     .top-row-news
