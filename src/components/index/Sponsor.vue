@@ -171,6 +171,22 @@ const sponsorsList = [
     imageAlt: '',
     imagePath: 'img/iost.png',
   },
+  {
+    title: 'UNION',
+    text: `Union is a technology platform that combines bundled protection and a liquid secondary market with a multi-token model. DeFi participants manage their multi-layer risks across smart contracts and protocols in one scalable system. UNION decreases the barriers to entry for retail users and lays the foundation for institutional investors.`,
+    status: 'Validator',
+    url: 'https://www.unn.finance/',
+    imageAlt: '',
+    imagePath: 'img/union.svg',
+  },
+  {
+    title: 'MADANA',
+    text: `Madana, a German blockchain tech start-up, provides an easily integrable solution for data analysis that allows participants to establish a data market while preserving Privacy by Design. Madana enables companies to make better use of data and acquire more unique insights, especially from their customers.`,
+    status: 'Validator',
+    url: 'https://www.madana.io/',
+    imageAlt: '',
+    imagePath: 'img/madana.png',
+  },
 ];
 
 const sponsors = {
