@@ -6,7 +6,7 @@ footer
       .footer-info-bottom
         //- img.image(src='img/gravity-footer-text.svg', alt='waves')
         a.link(:href='`mailto:${contactInfo.email}`') {{ contactInfo.email }}
-        span.copyrights © 2020 Gravity Protocol
+        span.copyrights © 2021 Gravity Protocol
     .footer-menu
       .footer-menu-block
         span.footer-menu-block-title {{ sections.protocol.label }}
