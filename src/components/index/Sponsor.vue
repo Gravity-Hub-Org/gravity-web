@@ -318,6 +318,17 @@ section.sponsor-wrap {
         margin: 0 10px 10px 0;
         border: 1px solid #22243b;
         position: relative;
+        &:hover {
+          .container-about {
+            border-radius: 5px;
+            // top: -1px;
+            top: unset;
+            left: 0;
+            display: block;
+            z-index: 999;
+            cursor: pointer;
+          }
+        }
 
         @include bb(endmobile, 0) {
           width: 49%;
@@ -336,17 +347,6 @@ section.sponsor-wrap {
           }
           &:nth-child(odd) {
             margin: 2px 2px 3px 0;
-          }
-        }
-        &:hover {
-          .container-about {
-            border-radius: 5px;
-            // top: -1px;
-            top: unset;
-            left: 0;
-            display: block;
-            z-index: 999;
-            cursor: pointer;
           }
         }
       }
@@ -380,12 +380,18 @@ section.sponsor-wrap {
         border: 1px solid #22243b;
         border-radius: 2px;
         box-sizing: border-box;
+        .close{
+          position: absolute;
+          top:10px;
+          right: 5px;
+          display: none;
+        }
         @include bb(endmobile, 0) {
           position: absolute;
           left: 0px;
           top: -1px;
           right: 0px;
-          .click {
+          .close {
             display: block;
           }
         }

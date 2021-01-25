@@ -1,8 +1,10 @@
 <template lang="pug">
-.sponsor-item
+.sponsor-item(
+       @click='showInfo = !showInfo'
+      )
   <img class='click' src='/img/icons/info-1.svg'>
   <img class='img-sponsors' :src="item.imagePath", :alt="item.imageAlt">
-  .container-about
+  .container-about(v-if="showInfo")
     .about-sponsor
       .sponsor-wrap 
         <img class='img-spn' v-bind:src=item.imagePath>
@@ -16,6 +18,11 @@ export default {
   name: 'SponsorItem',
   props: {
     item: Object,
+  },
+  data: function () {
+    return {
+      showInfo: true,
+    }
   },
 };
 </script>
