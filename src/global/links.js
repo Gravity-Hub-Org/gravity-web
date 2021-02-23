@@ -231,8 +231,13 @@ export const sections = {
         target: '_blank',
       },
       {
-        label: 'Demo',
+        label: 'Explorer',
         link: '/explorer',
+        target: '_blank',
+      },
+      {
+        label: 'Bridges',
+        link: 'https://susy.gravity.tech/',
         target: '_blank',
       }
     ],
