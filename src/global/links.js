@@ -46,9 +46,14 @@ export const getSitemap = () => {
         priority: 1,
       },
       {
+        url: '/metamask-waves',
+        priority: 1,
+      },
+      {
         url: '/blog',
         priority: 1,
-      }
+      },
+
     ]
   }
 }
@@ -141,6 +146,7 @@ export const getDiscordLink = (sections) => sections.community.links.find(item =
 export const getBlogLink = (sections) => sections.protocol.links.find(item => item.label === 'FAQ')
 export const getFAQLink = () => 'https://medium.com/gravity-protocol'
 export const getDocsLink = (sections) => sections.protocol.links.find(item => item.label === 'Docs')
+export const getDemoMM = () => 'http://172.105.4.87:8080/'
 
 export const internalProtocolLinks = {
   links: [
