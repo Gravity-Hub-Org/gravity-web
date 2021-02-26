@@ -232,11 +232,6 @@ export const sections = {
         target: '_blank',
       },
       {
-        label: 'Metamask-waves',
-        link: 'http://172.105.4.87:8080/',
-        target: '_blank',
-      },
-      {
         label: 'Docs',
         link: 'https://docs.gravity.tech',
         target: '_blank',
