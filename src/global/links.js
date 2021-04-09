@@ -227,7 +227,7 @@ export const sections = {
         target: '_blank',
       },
       {
-        label: 'Metamask-waves',
+        label: 'Mirror Accounts',
         link: 'http://172.105.4.87:8080/',
         target: '_blank',
       },
