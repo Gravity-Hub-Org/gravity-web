@@ -9,9 +9,9 @@ section.news-wrap
         <img class='main'src='/img/gravity-main.svg'>
         .info-about-main
           .data 14.11.2020
-          a.text-main(target='_blank', href='/') The first application on top of Gravity network — cross-chain gateways between Waves (origin) and BSC (destination) — is now live!
+          a.text-main(target='_blank', href='https://medium.com/gravity-protocol/gravity-mainnet-alpha-launch-with-waves-bsc-as-target-chains-e110b59a01b8') The first application on top of Gravity network — cross-chain gateways between Waves (origin) and BSC (destination) — is now live!
           <br/>
-          a.news-info(target='_blank', href='/') See more
+          a.news-info(target='_blank', href='https://medium.com/gravity-protocol/gravity-mainnet-alpha-launch-with-waves-bsc-as-target-chains-e110b59a01b8') See more
       //.main-news
         <img class='main'src='/img/gravity-demo.png'>
         .info-about-main
