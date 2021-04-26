@@ -187,6 +187,14 @@ const sponsorsList = [
     imageAlt: '',
     imagePath: 'img/madana.png',
   },
+    {
+    title: 'BSC',
+    text: `Binance Smart Chain (BSC) is a blockchain network built for running smart contract-based applications. BSC runs in parallel with Binance's native Binance Chain (BC), which allows users to get the best of both worlds: the high transaction capacity of BC and the smart contract functionality of BSC.`,
+    status: 'Validator',
+    url: 'https://www.binance.org/en/',
+    imageAlt: '',
+    imagePath: 'img/BSC.svg',
+  },
 ];
 
 const sponsors = {
